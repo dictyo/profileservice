@@ -10,41 +10,89 @@ import org.hibernate.validator.constraints.NotEmpty;
 @Entity
 public class Learner {
 
-    @Id
-    @GeneratedValue
-    private Long id;
+  public Learner() {
+  }
 
-    @NotEmpty
-    private String name = "";
+  public Learner(String name, String profession, int birthyear) {
+    this.setName(name);
+    this.setProfession(profession);
+    this.setBirthyear((birthyear));
+  }
 
-    private String profession = "";
-    private Integer birthyear;
+  @Id
+  @GeneratedValue
+  private Long id;
 
-    public String getProfession() {
-        return profession;
+  @NotEmpty
+  private String name = "";
+
+  private String profession = "";
+
+
+  private Integer birthyear;
+
+  public String getProfession() {
+    return profession;
+  }
+
+  public void setProfession(String profession) {
+    this.profession = profession;
+  }
+
+  public Long getId() {
+    return id;
+  }
+
+  public void setId(Long id) {
+    this.id = id;
+  }
+
+  public String getName() {
+    return name;
+  }
+
+  public void setName(String name) {
+    this.name = name;
+  }
+
+  public Integer getBirthyear() {
+    return birthyear;
+  }
+
+  public void setBirthyear(Integer birthyear) {
+    this.birthyear = birthyear;
+  }
+
+  @Override
+  public boolean equals(Object o) {
+    if (this == o) {
+      return true;
+    }
+    if (!(o instanceof Learner)) {
+      return false;
     }
 
-    public void setProfession(String profession) {
-        this.profession = profession;
-    }
+    Learner learner = (Learner) o;
 
-    public Long getId() {
-        return id;
+    if (!getName().equals(learner.getName())) {
+      return false;
     }
-
-    public void setId(Long id) {
-        this.id = id;
+    if (!getProfession().equals(learner.getProfession())) {
+      return false;
     }
+    return getBirthyear() != null ? getBirthyear().equals(learner.getBirthyear())
+        : learner.getBirthyear() == null;
+  }
 
-    public String getName() {
-        return name;
-    }
+  @Override
+  public int hashCode() {
+    int result = getName().hashCode();
+    result = 31 * result + getProfession().hashCode();
+    result = 31 * result + (getBirthyear() != null ? getBirthyear().hashCode() : 0);
+    return result;
+  }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-//    @OneToOne(optional=false)
+  //    @OneToOne(optional=false)
 //    @JoinColumn(name = "ORDER_ID")
 //    private MarketingRecord mrecord;
 

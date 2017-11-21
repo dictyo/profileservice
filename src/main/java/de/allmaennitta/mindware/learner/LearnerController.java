@@ -1,5 +1,9 @@
 package de.allmaennitta.mindware.learner;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 import javax.servlet.http.HttpServletResponse;
 
 import org.slf4j.Logger;
@@ -12,26 +16,33 @@ import java.io.IOException;
 
 @RestController
 class LearnerController {
-    private static final Logger LOG = LoggerFactory.getLogger(LearnerController.class);
 
-    @Autowired
-    LearnerRepository learnerRepository;
-    String root_redirect = "/learner/all";
+  private static final Logger LOG = LoggerFactory.getLogger(LearnerController.class);
 
-    @RequestMapping(value = "/")
-    public void handleRootRequest(HttpServletResponse response) {
-        try {
-            response.sendRedirect(root_redirect);
-        } catch (IOException e) {
-            throw new IllegalArgumentException(String.format("Request can't be redirected to URL %s", root_redirect));
-        }
+  @Autowired
+  LearnerRepository learnerRepository;
+
+  String root_redirect = "/learner/all";
+
+  @RequestMapping(value = "/")
+  public void handleRootRequest(HttpServletResponse response) {
+    try {
+      response.sendRedirect(root_redirect);
+    } catch (IOException e) {
+      throw new IllegalStateException(
+          String.format("There is an error redirecting to URL %s", root_redirect));
     }
+  }
 
-    @RequestMapping(value = "/learner/all", method = RequestMethod.GET)
-    public Iterable list() {
-        return learnerRepository.findAll();
-    }
-
+  @RequestMapping(value = "/learner/all", method = RequestMethod.GET)
+  @ResponseBody
+  Map<String,List<Learner>> allLearners() {
+    ArrayList<Learner> listOfLearners = new ArrayList<>();
+    learnerRepository.findAll().forEach(listOfLearners::add);
+    Map learners = new HashMap();
+    learners.put("learners", listOfLearners);
+    return learners;
+  }
 }
 //
 //    @GetMapping
