@@ -2,9 +2,9 @@ insert into learner(id, name, profession, birthyear) values (1, 'Hugo', 'Mathema
 insert into learner(id, name, profession, birthyear) values (2, 'Ulla', 'Carpenter', '1969');
 insert into learner(id, name, profession, birthyear) values (3, 'Jennifer', 'Lawyer', '1977');
 insert into learner(id, name, profession, birthyear) values (4, 'Kevin', 'German Literature', '1989');
-insert into learn_statistics(id, learner, action) values (1, 1, 1);
-insert into learn_statistics(id, learner, action) values (2, 2, 2);
-insert into learn_statistics(id, learner, action) values (3, 2, 1);
-insert into learn_statistics(id, learner, action) values (4, 3, 1);
+insert into learn_statistics(id, node, action) values (1, 1, 1);
+insert into learn_statistics(id, node, action) values (2, 2, 2);
+insert into learn_statistics(id, node, action) values (3, 2, 1);
+insert into learn_statistics(id, node, action) values (4, 3, 1);
 insert into actions(id, name) values (1, 'addItem');
 insert into actions(id, name) values (2, 'removeItem');
