@@ -1,12 +1,8 @@
-package de.allmaennitta.mindware.learner;
+package de.allmaennitta.profileservice;
 
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
-
-import java.util.Arrays;
 
 @SpringBootApplication
 public class Application {
@@ -15,10 +11,10 @@ public class Application {
         SpringApplication.run(Application.class, args);
     }
 
-//    @Bean
-//    public LearnerController learnerController(){
-//        return new LearnerController();
-//    }
+    @Bean
+    public ProfileController learnerController(){
+        return new ProfileController();
+    }
 //    @Bean
 //    public CommandLineRunner commandLineRunner(ApplicationContext ctx) {
 //        return args -> {
@@ -28,7 +24,6 @@ public class Application {
 //            for (String beanName : beanNames) {
 //                System.out.println(beanName);
 //            }
-//
 //        };
 //    }
 

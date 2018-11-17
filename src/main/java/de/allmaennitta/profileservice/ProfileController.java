@@ -1,4 +1,4 @@
-package de.allmaennitta.mindware.learner;
+package de.allmaennitta.profileservice;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -9,20 +9,19 @@ import javax.servlet.http.HttpServletResponse;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import java.io.IOException;
 
 @RestController
-class LearnerController {
+class ProfileController {
 
-  private static final Logger LOG = LoggerFactory.getLogger(LearnerController.class);
+  private static final Logger LOG = LoggerFactory.getLogger(ProfileController.class);
 
   @Autowired
-  LearnerRepository learnerRepository;
+  ProfileRepository profileRepository;
 
-  String root_redirect = "/learner/all";
+  String root_redirect = "/profiles";
 
   @RequestMapping(value = "/")
   public void handleRootRequest(HttpServletResponse response) {
@@ -34,13 +33,13 @@ class LearnerController {
     }
   }
 
-  @RequestMapping(value = "/learner/all", method = RequestMethod.GET)
+  @RequestMapping(value = "/profiles", method = RequestMethod.GET)
   @ResponseBody
-  Map<String,List<Learner>> allLearners() {
-    ArrayList<Learner> listOfLearners = new ArrayList<>();
-    learnerRepository.findAll().forEach(listOfLearners::add);
+  Map<String,List<Profile>> allLearners() {
+    ArrayList<Profile> listOfProfiles = new ArrayList<>();
+    profileRepository.findAll().forEach(listOfProfiles::add);
     Map learners = new HashMap();
-    learners.put("learners", listOfLearners);
+    learners.put("learners", listOfProfiles);
     return learners;
   }
 }

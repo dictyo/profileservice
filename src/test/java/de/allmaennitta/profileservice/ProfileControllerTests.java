@@ -1,4 +1,4 @@
-package de.allmaennitta.mindware.learner;
+package de.allmaennitta.profileservice;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
@@ -19,10 +19,10 @@ import org.springframework.test.web.servlet.MockMvc;
 @RunWith(SpringRunner.class)
 @SpringBootTest(webEnvironment = WebEnvironment.MOCK)
 @AutoConfigureMockMvc
-public class LearnerControllerTests {
+public class ProfileControllerTests {
 
   @Autowired
-  private LearnerController learnerController;
+  private ProfileController profileController;
 
   @Autowired
   private MockMvc mockMvc;

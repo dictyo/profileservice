@@ -1,19 +1,17 @@
-package de.allmaennitta.mindware.learner;
+package de.allmaennitta.profileservice;
 
 import javax.persistence.*;
 import java.lang.Long;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-
 import org.hibernate.validator.constraints.NotEmpty;
 
 @Entity
-public class Learner {
+public class Profile {
 
-  public Learner() {
+  public Profile() {
   }
 
-  public Learner(String name, String profession, int birthyear) {
+  public Profile(String name, String profession, int birthyear) {
     this.setName(name);
     this.setProfession(profession);
     this.setBirthyear((birthyear));
@@ -68,20 +66,20 @@ public class Learner {
     if (this == o) {
       return true;
     }
-    if (!(o instanceof Learner)) {
+    if (!(o instanceof Profile)) {
       return false;
     }
 
-    Learner learner = (Learner) o;
+    Profile profile = (Profile) o;
 
-    if (!getName().equals(learner.getName())) {
+    if (!getName().equals(profile.getName())) {
       return false;
     }
-    if (!getProfession().equals(learner.getProfession())) {
+    if (!getProfession().equals(profile.getProfession())) {
       return false;
     }
-    return getBirthyear() != null ? getBirthyear().equals(learner.getBirthyear())
-        : learner.getBirthyear() == null;
+    return getBirthyear() != null ? getBirthyear().equals(profile.getBirthyear())
+        : profile.getBirthyear() == null;
   }
 
   @Override
