@@ -1,0 +1,495 @@
+{
+  "charts": [
+    {
+      "name": "Backend Skills",
+      "id": "backend",
+      "categories": [
+        {
+          "name": "Languages",
+          "entries": [
+            {
+              "title": "PHP",
+              "exp": {
+                "value": 1,
+                "correction": 0
+              },
+              "focus": {
+                "value": 1,
+                "correction": -0.2
+              }
+            },
+            {
+              "title": "VBA",
+              "exp": {
+                "value": 2,
+                "correction": 0
+              },
+              "focus": {
+                "value": 1,
+                "correction": 0.2
+              }
+            },
+            {
+              "title": "Java<br>Spring",
+              "exp": {"value":3, "correction":0},
+              "focus": {"value":2, "correction":0}
+            },
+            {
+              "title": "Python",
+              "exp": {"value":2, "correction":0},
+              "focus": {"value":2, "correction":0}
+            },
+            {
+              "title": "NodeJs<br>Typescript",
+              "exp": {"value":2, "correction":0},
+              "focus": {"value":2, "correction":0.2}
+            },
+            {
+              "title": "Scala",
+              "exp": {"value":2, "correction":0},
+              "focus": {"value":3, "correction":0.2}
+            }
+          ]
+        },
+        {
+          "name": "Data",
+          "entries": [
+            {
+              "title": "NoSQL",
+              "exp": {"value":1, "correction":0},
+              "focus": {"value":2, "correction":0}
+            },
+            {
+              "title": "Drools",
+              "exp": {"value":2, "correction":0},
+              "focus": {"value":1.8, "correction":0}
+            },
+            {
+              "title": "RDBMS",
+              "exp": {"value":2, "correction":0},
+              "focus": {"value":2, "correction":0}
+            },
+            {
+              "title": "GraphDB",
+              "exp": {"value":1, "correction":0},
+              "focus": {"value":3.1, "correction":0}
+            },
+            {
+              "title": "Solr",
+              "exp": {"value":1, "correction":0},
+              "focus": {"value":3.3, "correction":0}
+            }
+          ]
+        },
+        {
+          "name": "Service-<br>Communication",
+          "entries": [
+            {
+              "title": "SOAP",
+              "exp": {"value":2, "correction":0},
+              "focus": {"value":1, "correction":0}
+            },
+            {
+              "title": "REST",
+              "exp": {"value":2, "correction":0},
+              "focus": {"value":1.8, "correction":0}
+            },
+            {
+              "title": "JMS",
+              "exp": {"value":2, "correction":0},
+              "focus": {"value":2.2, "correction":0}
+            },
+            {
+              "title": "Reactive",
+              "exp": {"value":1, "correction":0},
+              "focus": {"value":2, "correction":0}
+            },
+            {
+              "title": "Actors",
+              "exp": {"value":1, "correction":0},
+              "focus": {"value":3, "correction":0}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Frontend Skills",
+      "id": "frontend",
+      "categories": [
+        {
+          "name": "Languages",
+          "entries": [
+            {
+              "title": "Selenium",
+              "exp": {"value":2.1, "correction":0},
+              "focus": {"value":0.8, "correction":0}
+            },
+            {
+              "title": "HTML<br>CSS",
+              "exp": {"value":2, "correction":0},
+              "focus": {"value":1.2, "correction":0}
+            },
+            {
+              "title": "Templates<br>Mustache,Twig,...",
+              "exp": {"value":2, "correction":0},
+              "focus": {"value":1.8, "correction":0}
+            },
+            {
+              "title": "ECMA 5/6/7",
+              "exp": {"value":2, "correction":0},
+              "focus": {"value":2.2, "correction":0}
+            },
+            {
+              "title": "SVG",
+              "exp": {"value":1, "correction":0},
+              "focus": {"value":2, "correction":0}
+            }
+          ]
+        },
+        {
+          "name": "Frameworks",
+          "entries": [
+            {
+              "title": "gulp<br>browserify",
+              "exp": {"value":2.1, "correction":0},
+              "focus": {"value":1, "correction":0}
+            },
+            {
+              "title": "Angular",
+              "exp": {"value":1, "correction":0},
+              "focus": {"value":1.8, "correction":-0.2}
+            },
+            {
+              "title": "webpack<br>npm",
+              "exp": {"value":1, "correction":0},
+              "focus": {"value":2, "correction":0}
+            },
+            {
+              "title": "React",
+              "exp": {"value":1, "correction":0},
+              "focus": {"value":3, "correction":0}
+            },
+            {
+              "title": "PatternLab<br>Jest<br>Karma",
+              "exp": {"value":2, "correction":0},
+              "focus": {"value":3, "correction":0}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "DevOps Skills",
+      "id": "devops",
+      "categories": [
+        {
+          "name": "Systems",
+          "entries": [
+            {
+              "title": "Win7",
+              "exp": {"value":2, "correction":0},
+              "focus": {"value":0.8, "correction":-0.2}
+            },
+            {
+              "title": "Mac",
+              "exp": {"value":2, "correction":0},
+              "focus": {"value":1, "correction":0}
+            },
+            {
+              "title": "Win10",
+              "exp": {"value":2, "correction":0},
+              "focus": {"value":2, "correction":0}
+            },
+            {
+              "title": "Linux",
+              "exp": {"value":2, "correction":0},
+              "focus": {"value":3, "correction":0}
+            }
+          ]
+        },
+        {
+          "name": "Virtualisation",
+          "entries": [
+            {
+              "title": "VMs",
+              "exp": {"value":2, "correction":0},
+              "focus": {"value":1, "correction":0}
+            },
+            {
+              "title": "Docker",
+              "exp": {"value":2, "correction":0},
+              "focus": {"value":2.8, "correction":-0.2}
+            },
+            {
+              "title": "Kybernetes",
+              "exp": {"value":1, "correction":0},
+              "focus": {"value":3, "correction":0}
+            }
+          ]
+        },
+        {
+          "name": "Tools",
+          "entries": [
+            {
+              "title": "Nagios",
+              "exp": {"value":1, "correction":0},
+              "focus": {"value":1, "correction":0}
+            },
+            {
+              "title": "JMeter",
+              "exp": {"value":2, "correction":0},
+              "focus": {"value":1, "correction":0}
+            },
+            {
+              "title": "Jenkins",
+              "exp": {"value":1, "correction":0},
+              "focus": {"value":1.8, "correction":-0.2}
+            },
+            {
+              "title": "Ansible",
+              "exp": {"value":1, "correction":0},
+              "focus": {"value":2, "correction":0}
+            },
+            {
+              "title": "Sonar",
+              "exp": {"value":1.2, "correction":0},
+              "focus": {"value":2, "correction":0}
+            },
+            {
+              "title": "XPath",
+              "exp": {"value":2, "correction":0},
+              "focus": {"value":1.8, "correction":-0.2}
+            },
+            {
+              "title": "RegExp",
+              "exp": {"value":2, "correction":0},
+              "focus": {"value":2.2, "correction":0}
+            },
+            {
+              "title": "Spring<br>Integration",
+              "exp": {"value":1, "correction":0},
+              "focus": {"value":2.8, "correction":-0.2}
+            },
+            {
+              "title": "Gatling",
+              "exp": {"value":1, "correction":0},
+              "focus": {"value":3, "correction":0}
+            },
+            {
+              "title": "AWS",
+              "exp": {"value":1, "correction":0},
+              "focus": {"value":3.2, "correction":0}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Methodology Skills",
+      "id": "methodology",
+      "categories": [
+        {
+          "name": "IT-related",
+          "entries": [
+            {
+              "title": "'Coding-Ninja'",
+              "exp": {"value":0.6, "correction":-0.4},
+              "focus": {"value":0.8, "correction":-0.2}
+            },
+            {
+              "title": "Clean Code",
+              "exp": {"value":2, "correction":0.2},
+              "focus": {"value":2, "correction":-0.2}
+            },
+            {
+              "title": "Microservice<br>Architecture",
+              "exp": {"value":2, "correction":0},
+              "focus": {"value":2, "correction":0.2}
+            },
+            {
+              "title": "Agile Testing",
+              "exp": {"value":2, "correction":0},
+              "focus": {"value":3, "correction":0}
+            },
+            {
+              "title": "TDD/BDD",
+              "exp": {"value":3, "correction":0},
+              "focus": {"value":3, "correction":0}
+            }
+          ]
+        },
+        {
+          "name": "Project-Management",
+          "entries": [
+            {
+              "title": "Traditional PM",
+              "exp": {"value":2, "correction":0},
+              "focus": {"value":1, "correction":0}
+            },
+            {
+              "title": "Product<br>Owner",
+              "exp": {"value":3, "correction":0},
+              "focus": {"value":1, "correction":0}
+            },
+            {
+              "title": "Scrum<br>Master",
+              "exp": {"value":3, "correction":0},
+              "focus": {"value":1, "correction":0.2}
+            },
+            {
+              "title": "MVP<br>Thinking",
+              "exp": {"value":2, "correction":0},
+              "focus": {"value":2, "correction":0.2}
+            },
+            {
+              "title": "Agile Transformation",
+              "exp": {"value":3, "correction":0},
+              "focus": {"value":2, "correction":0}
+            },
+            {
+              "title": "Agile<br>Freestyle",
+              "exp": {"value":3, "correction":0},
+              "focus": {"value":3, "correction":-0.2}
+            }
+          ]
+        },
+        {
+          "name": "Organisational",
+          "entries": [
+            {
+              "title": "Statistical Analysis",
+              "exp": {"value":2, "correction":0},
+              "focus": {"value":1, "correction":0}
+            },
+            {
+              "title": "Office<br>Software",
+              "exp": {"value":3, "correction":0.1},
+              "focus": {"value":1, "correction":-0.2}
+            },
+            {
+              "title": "Jira<br>Confluence",
+              "exp": {"value":3, "correction":0.1},
+              "focus": {"value":1, "correction":0.2}
+            },
+            {
+              "title": "Labour<br>Psychology<br>(diploma)",
+              "exp": {"value":2, "correction":-0.2},
+              "focus": {"value":2, "correction":0}
+            },
+            {
+              "title": "Personality Types",
+              "exp": {"value":2, "correction":0},
+              "focus": {"value":3, "correction":0}
+            },
+            {
+              "title": "Servant Leadership",
+              "exp": {"value":3, "correction":0},
+              "focus": {"value":3, "correction":0}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Foreign Languages, Music, etc.",
+      "id": "languages",
+      "categories": [
+        {
+          "name": "Foreign<br>Languages",
+          "entries": [
+            {
+              "title": "Arabic",
+              "exp": {"value":1, "correction":0},
+              "focus": {"value":1, "correction":-0.2}
+            },
+            {
+              "title": "Farsi",
+              "exp": {"value":1, "correction":0},
+              "focus": {"value":1, "correction":0}
+            },
+            {
+              "title": "Latin",
+              "exp": {"value":2, "correction":0.1},
+              "focus": {"value":1, "correction":-0.2}
+            },
+            {
+              "title": "Italian",
+              "exp": {"value":2, "correction":0.1},
+              "focus": {"value":1, "correction":0}
+            },
+            {
+              "title": "French",
+              "exp": {"value":2, "correction":0.1},
+              "focus": {"value":1, "correction":0.2}
+            },
+            {
+              "title": "Spanish",
+              "exp": {"value":2, "correction":0},
+              "focus": {"value":2, "correction":0}
+            },
+            {
+              "title": "English",
+              "exp": {"value":3, "correction":0},
+              "focus": {"value":3, "correction":0}
+            }
+          ]
+        },
+        {
+          "name": "Music",
+          "entries": [
+            {
+              "title": "Choir<br>Mastering",
+              "exp": {"value":2, "correction":0},
+              "focus": {"value":1, "correction":-0.2}
+            },
+            {
+              "title": "Church<br>Organ",
+              "exp": {"value":2, "correction":0},
+              "focus": {"value":1, "correction":0}
+            },
+            {
+              "title": "(E)-Guitar",
+              "exp": {"value":2, "correction":0},
+              "focus": {"value":1, "correction":0.2}
+            },
+            {
+              "title": "Piano",
+              "exp": {"value":3, "correction":0},
+              "focus": {"value":1, "correction":0}
+            },
+            {
+              "title": "Seaboard",
+              "exp": {"value":1, "correction":0},
+              "focus": {"value":3, "correction":0}
+            }
+          ]
+        },
+        {
+          "name": "Other",
+          "entries": [
+            {
+              "title": "Art",
+              "exp": {"value":1, "correction":0},
+              "focus": {"value":1, "correction":0}
+            },
+            {
+              "title": "Literature",
+              "focus": {"value":1.8, "correction":0}
+            },
+            {
+              "title": "Science",
+              "exp": {"value":2, "correction":0},
+              "focus": {"value":2, "correction":0}
+            },
+            {
+              "title": "Politics",
+              "exp": {"value":2, "correction":0},
+              "focus": {"value":3, "correction":0}
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
