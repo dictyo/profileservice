@@ -31,23 +31,47 @@
             },
             {
               "title": "Java<br>Spring",
-              "exp": {"value":3, "correction":0},
-              "focus": {"value":2, "correction":0}
+              "exp": {
+                "value": 3,
+                "correction": 0
+              },
+              "focus": {
+                "value": 2,
+                "correction": 0
+              }
             },
             {
               "title": "Python",
-              "exp": {"value":2, "correction":0},
-              "focus": {"value":2, "correction":0}
+              "exp": {
+                "value": 2,
+                "correction": 0
+              },
+              "focus": {
+                "value": 2,
+                "correction": 0
+              }
             },
             {
               "title": "NodeJs<br>Typescript",
-              "exp": {"value":2, "correction":0},
-              "focus": {"value":2, "correction":0.2}
+              "exp": {
+                "value": 2,
+                "correction": 0
+              },
+              "focus": {
+                "value": 2,
+                "correction": 0.2
+              }
             },
             {
               "title": "Scala",
-              "exp": {"value":2, "correction":0},
-              "focus": {"value":3, "correction":0.2}
+              "exp": {
+                "value": 2,
+                "correction": 0
+              },
+              "focus": {
+                "value": 3,
+                "correction": 0.2
+              }
             }
           ]
         },
@@ -56,28 +80,58 @@
           "entries": [
             {
               "title": "NoSQL",
-              "exp": {"value":1, "correction":0},
-              "focus": {"value":2, "correction":0}
+              "exp": {
+                "value": 1,
+                "correction": 0
+              },
+              "focus": {
+                "value": 2,
+                "correction": 0
+              }
             },
             {
               "title": "Drools",
-              "exp": {"value":2, "correction":0},
-              "focus": {"value":1.8, "correction":0}
+              "exp": {
+                "value": 2,
+                "correction": 0
+              },
+              "focus": {
+                "value": 2,
+                "correction": -0.2
+              }
             },
             {
               "title": "RDBMS",
-              "exp": {"value":2, "correction":0},
-              "focus": {"value":2, "correction":0}
+              "exp": {
+                "value": 2,
+                "correction": 0
+              },
+              "focus": {
+                "value": 2,
+                "correction": 0
+              }
             },
             {
               "title": "GraphDB",
-              "exp": {"value":1, "correction":0},
-              "focus": {"value":3.1, "correction":0}
+              "exp": {
+                "value": 1,
+                "correction": 0
+              },
+              "focus": {
+                "value": 3,
+                "correction": 0.1
+              }
             },
             {
               "title": "Solr",
-              "exp": {"value":1, "correction":0},
-              "focus": {"value":3.3, "correction":0}
+              "exp": {
+                "value": 1,
+                "correction": 0
+              },
+              "focus": {
+                "value": 3,
+                "correction": 0.3
+              }
             }
           ]
         },
@@ -86,28 +140,58 @@
           "entries": [
             {
               "title": "SOAP",
-              "exp": {"value":2, "correction":0},
-              "focus": {"value":1, "correction":0}
+              "exp": {
+                "value": 2,
+                "correction": 0
+              },
+              "focus": {
+                "value": 1,
+                "correction": 0
+              }
             },
             {
               "title": "REST",
-              "exp": {"value":2, "correction":0},
-              "focus": {"value":1.8, "correction":0}
+              "exp": {
+                "value": 2,
+                "correction": 0
+              },
+              "focus": {
+                "value": 2,
+                "correction": -0.2
+              }
             },
             {
               "title": "JMS",
-              "exp": {"value":2, "correction":0},
-              "focus": {"value":2.2, "correction":0}
+              "exp": {
+                "value": 2,
+                "correction": 0
+              },
+              "focus": {
+                "value": 2,
+                "correction": 0.2
+              }
             },
             {
               "title": "Reactive",
-              "exp": {"value":1, "correction":0},
-              "focus": {"value":2, "correction":0}
+              "exp": {
+                "value": 1,
+                "correction": 0
+              },
+              "focus": {
+                "value": 2,
+                "correction": 0
+              }
             },
             {
               "title": "Actors",
-              "exp": {"value":1, "correction":0},
-              "focus": {"value":3, "correction":0}
+              "exp": {
+                "value": 1,
+                "correction": 0
+              },
+              "focus": {
+                "value": 3,
+                "correction": 0
+              }
             }
           ]
         }
@@ -122,28 +206,58 @@
           "entries": [
             {
               "title": "Selenium",
-              "exp": {"value":2.1, "correction":0},
-              "focus": {"value":0.8, "correction":0}
+              "exp": {
+                "value": 2,
+                "correction": 0.1
+              },
+              "focus": {
+                "value": 1,
+                "correction": -0.2
+              }
             },
             {
               "title": "HTML<br>CSS",
-              "exp": {"value":2, "correction":0},
-              "focus": {"value":1.2, "correction":0}
+              "exp": {
+                "value": 2,
+                "correction": 0
+              },
+              "focus": {
+                "value": 1,
+                "correction": 0.2
+              }
             },
             {
               "title": "Templates<br>Mustache,Twig,...",
-              "exp": {"value":2, "correction":0},
-              "focus": {"value":1.8, "correction":0}
+              "exp": {
+                "value": 2,
+                "correction": 0
+              },
+              "focus": {
+                "value": 2,
+                "correction": -0.2
+              }
             },
             {
               "title": "ECMA 5/6/7",
-              "exp": {"value":2, "correction":0},
-              "focus": {"value":2.2, "correction":0}
+              "exp": {
+                "value": 2,
+                "correction": 0
+              },
+              "focus": {
+                "value": 2,
+                "correction": 0.2
+              }
             },
             {
               "title": "SVG",
-              "exp": {"value":1, "correction":0},
-              "focus": {"value":2, "correction":0}
+              "exp": {
+                "value": 1,
+                "correction": 0
+              },
+              "focus": {
+                "value": 2,
+                "correction": 0
+              }
             }
           ]
         },
@@ -152,28 +266,58 @@
           "entries": [
             {
               "title": "gulp<br>browserify",
-              "exp": {"value":2.1, "correction":0},
-              "focus": {"value":1, "correction":0}
+              "exp": {
+                "value": 2,
+                "correction": 0.1
+              },
+              "focus": {
+                "value": 1,
+                "correction": 0
+              }
             },
             {
               "title": "Angular",
-              "exp": {"value":1, "correction":0},
-              "focus": {"value":1.8, "correction":-0.2}
+              "exp": {
+                "value": 1,
+                "correction": 0
+              },
+              "focus": {
+                "value": 2,
+                "correction": -0.2
+              }
             },
             {
               "title": "webpack<br>npm",
-              "exp": {"value":1, "correction":0},
-              "focus": {"value":2, "correction":0}
+              "exp": {
+                "value": 1,
+                "correction": 0
+              },
+              "focus": {
+                "value": 2,
+                "correction": 0
+              }
             },
             {
               "title": "React",
-              "exp": {"value":1, "correction":0},
-              "focus": {"value":3, "correction":0}
+              "exp": {
+                "value": 1,
+                "correction": 0
+              },
+              "focus": {
+                "value": 3,
+                "correction": 0
+              }
             },
             {
               "title": "PatternLab<br>Jest<br>Karma",
-              "exp": {"value":2, "correction":0},
-              "focus": {"value":3, "correction":0}
+              "exp": {
+                "value": 2,
+                "correction": 0
+              },
+              "focus": {
+                "value": 3,
+                "correction": 0
+              }
             }
           ]
         }
@@ -188,23 +332,47 @@
           "entries": [
             {
               "title": "Win7",
-              "exp": {"value":2, "correction":0},
-              "focus": {"value":0.8, "correction":-0.2}
+              "exp": {
+                "value": 2,
+                "correction": 0
+              },
+              "focus": {
+                "value": 1,
+                "correction": -0.2
+              }
             },
             {
               "title": "Mac",
-              "exp": {"value":2, "correction":0},
-              "focus": {"value":1, "correction":0}
+              "exp": {
+                "value": 2,
+                "correction": 0
+              },
+              "focus": {
+                "value": 1,
+                "correction": 0
+              }
             },
             {
               "title": "Win10",
-              "exp": {"value":2, "correction":0},
-              "focus": {"value":2, "correction":0}
+              "exp": {
+                "value": 2,
+                "correction": 0
+              },
+              "focus": {
+                "value": 2,
+                "correction": 0
+              }
             },
             {
               "title": "Linux",
-              "exp": {"value":2, "correction":0},
-              "focus": {"value":3, "correction":0}
+              "exp": {
+                "value": 2,
+                "correction": 0
+              },
+              "focus": {
+                "value": 3,
+                "correction": 0
+              }
             }
           ]
         },
@@ -213,18 +381,36 @@
           "entries": [
             {
               "title": "VMs",
-              "exp": {"value":2, "correction":0},
-              "focus": {"value":1, "correction":0}
+              "exp": {
+                "value": 2,
+                "correction": 0
+              },
+              "focus": {
+                "value": 1,
+                "correction": 0
+              }
             },
             {
               "title": "Docker",
-              "exp": {"value":2, "correction":0},
-              "focus": {"value":2.8, "correction":-0.2}
+              "exp": {
+                "value": 2,
+                "correction": 0
+              },
+              "focus": {
+                "value": 3,
+                "correction": -0.2
+              }
             },
             {
               "title": "Kybernetes",
-              "exp": {"value":1, "correction":0},
-              "focus": {"value":3, "correction":0}
+              "exp": {
+                "value": 1,
+                "correction": 0
+              },
+              "focus": {
+                "value": 3,
+                "correction": 0
+              }
             }
           ]
         },
@@ -233,53 +419,113 @@
           "entries": [
             {
               "title": "Nagios",
-              "exp": {"value":1, "correction":0},
-              "focus": {"value":1, "correction":0}
+              "exp": {
+                "value": 1,
+                "correction": 0
+              },
+              "focus": {
+                "value": 1,
+                "correction": 0
+              }
             },
             {
               "title": "JMeter",
-              "exp": {"value":2, "correction":0},
-              "focus": {"value":1, "correction":0}
+              "exp": {
+                "value": 2,
+                "correction": 0
+              },
+              "focus": {
+                "value": 1,
+                "correction": 0
+              }
             },
             {
               "title": "Jenkins",
-              "exp": {"value":1, "correction":0},
-              "focus": {"value":1.8, "correction":-0.2}
+              "exp": {
+                "value": 1,
+                "correction": 0
+              },
+              "focus": {
+                "value": 2,
+                "correction": -0.2
+              }
             },
             {
               "title": "Ansible",
-              "exp": {"value":1, "correction":0},
-              "focus": {"value":2, "correction":0}
+              "exp": {
+                "value": 1,
+                "correction": 0
+              },
+              "focus": {
+                "value": 2,
+                "correction": 0
+              }
             },
             {
               "title": "Sonar",
-              "exp": {"value":1.2, "correction":0},
-              "focus": {"value":2, "correction":0}
+              "exp": {
+                "value": 1,
+                "correction": 0.2
+              },
+              "focus": {
+                "value": 2,
+                "correction": 0
+              }
             },
             {
               "title": "XPath",
-              "exp": {"value":2, "correction":0},
-              "focus": {"value":1.8, "correction":-0.2}
+              "exp": {
+                "value": 2,
+                "correction": 0
+              },
+              "focus": {
+                "value": 2,
+                "correction": -0.2
+              }
             },
             {
               "title": "RegExp",
-              "exp": {"value":2, "correction":0},
-              "focus": {"value":2.2, "correction":0}
+              "exp": {
+                "value": 2,
+                "correction": 0
+              },
+              "focus": {
+                "value": 2,
+                "correction": 0.2
+              }
             },
             {
               "title": "Spring<br>Integration",
-              "exp": {"value":1, "correction":0},
-              "focus": {"value":2.8, "correction":-0.2}
+              "exp": {
+                "value": 1,
+                "correction": 0
+              },
+              "focus": {
+                "value": 3,
+                "correction": -0.2
+              }
             },
             {
               "title": "Gatling",
-              "exp": {"value":1, "correction":0},
-              "focus": {"value":3, "correction":0}
+              "exp": {
+                "value": 1,
+                "correction": 0
+              },
+              "focus": {
+                "value": 3,
+                "correction": 0
+              }
             },
             {
               "title": "AWS",
-              "exp": {"value":1, "correction":0},
-              "focus": {"value":3.2, "correction":0}
+              "exp": {
+                "value": 1,
+                "correction": 0
+              },
+              "focus": {
+                "value": 3,
+                "correction": 0.2
+              }
             }
           ]
         }
@@ -294,28 +540,58 @@
           "entries": [
             {
               "title": "'Coding-Ninja'",
-              "exp": {"value":0.6, "correction":-0.4},
-              "focus": {"value":0.8, "correction":-0.2}
+              "exp": {
+                "value": 1,
+                "correction": -0.4
+              },
+              "focus": {
+                "value": 1,
+                "correction": -0.2
+              }
             },
             {
               "title": "Clean Code",
-              "exp": {"value":2, "correction":0.2},
-              "focus": {"value":2, "correction":-0.2}
+              "exp": {
+                "value": 2,
+                "correction": 0.2
+              },
+              "focus": {
+                "value": 2,
+                "correction": -0.2
+              }
             },
             {
               "title": "Microservice<br>Architecture",
-              "exp": {"value":2, "correction":0},
-              "focus": {"value":2, "correction":0.2}
+              "exp": {
+                "value": 2,
+                "correction": 0
+              },
+              "focus": {
+                "value": 2,
+                "correction": 0.2
+              }
             },
             {
               "title": "Agile Testing",
-              "exp": {"value":2, "correction":0},
-              "focus": {"value":3, "correction":0}
+              "exp": {
+                "value": 2,
+                "correction": 0
+              },
+              "focus": {
+                "value": 3,
+                "correction": 0
+              }
             },
             {
               "title": "TDD/BDD",
-              "exp": {"value":3, "correction":0},
-              "focus": {"value":3, "correction":0}
+              "exp": {
+                "value": 3,
+                "correction": 0
+              },
+              "focus": {
+                "value": 3,
+                "correction": 0
+              }
             }
           ]
         },
@@ -324,33 +600,69 @@
           "entries": [
             {
               "title": "Traditional PM",
-              "exp": {"value":2, "correction":0},
-              "focus": {"value":1, "correction":0}
+              "exp": {
+                "value": 2,
+                "correction": 0
+              },
+              "focus": {
+                "value": 1,
+                "correction": 0
+              }
             },
             {
               "title": "Product<br>Owner",
-              "exp": {"value":3, "correction":0},
-              "focus": {"value":1, "correction":0}
+              "exp": {
+                "value": 3,
+                "correction": 0
+              },
+              "focus": {
+                "value": 1,
+                "correction": 0
+              }
             },
             {
               "title": "Scrum<br>Master",
-              "exp": {"value":3, "correction":0},
-              "focus": {"value":1, "correction":0.2}
+              "exp": {
+                "value": 3,
+                "correction": 0
+              },
+              "focus": {
+                "value": 1,
+                "correction": 0.2
+              }
             },
             {
               "title": "MVP<br>Thinking",
-              "exp": {"value":2, "correction":0},
-              "focus": {"value":2, "correction":0.2}
+              "exp": {
+                "value": 2,
+                "correction": 0
+              },
+              "focus": {
+                "value": 2,
+                "correction": 0.2
+              }
             },
             {
               "title": "Agile Transformation",
-              "exp": {"value":3, "correction":0},
-              "focus": {"value":2, "correction":0}
+              "exp": {
+                "value": 3,
+                "correction": 0
+              },
+              "focus": {
+                "value": 2,
+                "correction": 0
+              }
             },
             {
               "title": "Agile<br>Freestyle",
-              "exp": {"value":3, "correction":0},
-              "focus": {"value":3, "correction":-0.2}
+              "exp": {
+                "value": 3,
+                "correction": 0
+              },
+              "focus": {
+                "value": 3,
+                "correction": -0.2
+              }
             }
           ]
         },
@@ -359,33 +671,69 @@
           "entries": [
             {
               "title": "Statistical Analysis",
-              "exp": {"value":2, "correction":0},
-              "focus": {"value":1, "correction":0}
+              "exp": {
+                "value": 2,
+                "correction": 0
+              },
+              "focus": {
+                "value": 1,
+                "correction": 0
+              }
             },
             {
               "title": "Office<br>Software",
-              "exp": {"value":3, "correction":0.1},
-              "focus": {"value":1, "correction":-0.2}
+              "exp": {
+                "value": 3,
+                "correction": 0.1
+              },
+              "focus": {
+                "value": 1,
+                "correction": -0.2
+              }
             },
             {
               "title": "Jira<br>Confluence",
-              "exp": {"value":3, "correction":0.1},
-              "focus": {"value":1, "correction":0.2}
+              "exp": {
+                "value": 3,
+                "correction": 0.1
+              },
+              "focus": {
+                "value": 1,
+                "correction": 0.2
+              }
             },
             {
               "title": "Labour<br>Psychology<br>(diploma)",
-              "exp": {"value":2, "correction":-0.2},
-              "focus": {"value":2, "correction":0}
+              "exp": {
+                "value": 2,
+                "correction": -0.2
+              },
+              "focus": {
+                "value": 2,
+                "correction": 0
+              }
             },
             {
               "title": "Personality Types",
-              "exp": {"value":2, "correction":0},
-              "focus": {"value":3, "correction":0}
+              "exp": {
+                "value": 2,
+                "correction": 0
+              },
+              "focus": {
+                "value": 3,
+                "correction": 0
+              }
             },
             {
               "title": "Servant Leadership",
-              "exp": {"value":3, "correction":0},
-              "focus": {"value":3, "correction":0}
+              "exp": {
+                "value": 3,
+                "correction": 0
+              },
+              "focus": {
+                "value": 3,
+                "correction": 0
+              }
             }
           ]
         }
@@ -400,38 +748,80 @@
           "entries": [
             {
               "title": "Arabic",
-              "exp": {"value":1, "correction":0},
-              "focus": {"value":1, "correction":-0.2}
+              "exp": {
+                "value": 1,
+                "correction": 0
+              },
+              "focus": {
+                "value": 1,
+                "correction": -0.2
+              }
             },
             {
               "title": "Farsi",
-              "exp": {"value":1, "correction":0},
-              "focus": {"value":1, "correction":0}
+              "exp": {
+                "value": 1,
+                "correction": 0
+              },
+              "focus": {
+                "value": 1,
+                "correction": 0
+              }
             },
             {
               "title": "Latin",
-              "exp": {"value":2, "correction":0.1},
-              "focus": {"value":1, "correction":-0.2}
+              "exp": {
+                "value": 2,
+                "correction": 0.1
+              },
+              "focus": {
+                "value": 1,
+                "correction": -0.2
+              }
             },
             {
               "title": "Italian",
-              "exp": {"value":2, "correction":0.1},
-              "focus": {"value":1, "correction":0}
+              "exp": {
+                "value": 2,
+                "correction": 0.1
+              },
+              "focus": {
+                "value": 1,
+                "correction": 0
+              }
             },
             {
               "title": "French",
-              "exp": {"value":2, "correction":0.1},
-              "focus": {"value":1, "correction":0.2}
+              "exp": {
+                "value": 2,
+                "correction": 0.1
+              },
+              "focus": {
+                "value": 1,
+                "correction": 0.2
+              }
             },
             {
               "title": "Spanish",
-              "exp": {"value":2, "correction":0},
-              "focus": {"value":2, "correction":0}
+              "exp": {
+                "value": 2,
+                "correction": 0
+              },
+              "focus": {
+                "value": 2,
+                "correction": 0
+              }
             },
             {
               "title": "English",
-              "exp": {"value":3, "correction":0},
-              "focus": {"value":3, "correction":0}
+              "exp": {
+                "value": 3,
+                "correction": 0
+              },
+              "focus": {
+                "value": 3,
+                "correction": 0
+              }
             }
           ]
         },
@@ -440,28 +830,58 @@
           "entries": [
             {
               "title": "Choir<br>Mastering",
-              "exp": {"value":2, "correction":0},
-              "focus": {"value":1, "correction":-0.2}
+              "exp": {
+                "value": 2,
+                "correction": 0
+              },
+              "focus": {
+                "value": 1,
+                "correction": -0.2
+              }
             },
             {
               "title": "Church<br>Organ",
-              "exp": {"value":2, "correction":0},
-              "focus": {"value":1, "correction":0}
+              "exp": {
+                "value": 2,
+                "correction": 0
+              },
+              "focus": {
+                "value": 1,
+                "correction": 0
+              }
             },
             {
               "title": "(E)-Guitar",
-              "exp": {"value":2, "correction":0},
-              "focus": {"value":1, "correction":0.2}
+              "exp": {
+                "value": 2,
+                "correction": 0
+              },
+              "focus": {
+                "value": 1,
+                "correction": 0.2
+              }
             },
             {
               "title": "Piano",
-              "exp": {"value":3, "correction":0},
-              "focus": {"value":1, "correction":0}
+              "exp": {
+                "value": 3,
+                "correction": 0
+              },
+              "focus": {
+                "value": 1,
+                "correction": 0
+              }
             },
             {
               "title": "Seaboard",
-              "exp": {"value":1, "correction":0},
-              "focus": {"value":3, "correction":0}
+              "exp": {
+                "value": 1,
+                "correction": 0
+              },
+              "focus": {
+                "value": 3,
+                "correction": 0
+              }
             }
           ]
         },
@@ -470,22 +890,43 @@
           "entries": [
             {
               "title": "Art",
-              "exp": {"value":1, "correction":0},
-              "focus": {"value":1, "correction":0}
+              "exp": {
+                "value": 1,
+                "correction": 0
+              },
+              "focus": {
+                "value": 1,
+                "correction": 0
+              }
             },
             {
               "title": "Literature",
-              "focus": {"value":1.8, "correction":0}
+              "focus": {
+                "value": 2,
+                "correction": -0.2
+              }
             },
             {
               "title": "Science",
-              "exp": {"value":2, "correction":0},
-              "focus": {"value":2, "correction":0}
+              "exp": {
+                "value": 2,
+                "correction": 0
+              },
+              "focus": {
+                "value": 2,
+                "correction": 0
+              }
             },
             {
               "title": "Politics",
-              "exp": {"value":2, "correction":0},
-              "focus": {"value":3, "correction":0}
+              "exp": {
+                "value": 2,
+                "correction": 0
+              },
+              "focus": {
+                "value": 3,
+                "correction": 0
+              }
             }
           ]
         }
