@@ -1,15 +1,15 @@
 {
-  "charts": [
+  "domains": [
     {
       "name": "Backend Skills",
       "id": "backend",
       "categories": [
         {
           "name": "Languages",
-          "entries": [
+          "skills": [
             {
-              "title": "PHP",
-              "exp": {
+              "name": "PHP",
+              "experience": {
                 "value": 1,
                 "correction": 0
               },
@@ -19,8 +19,8 @@
               }
             },
             {
-              "title": "VBA",
-              "exp": {
+              "name": "VBA",
+              "experience": {
                 "value": 2,
                 "correction": 0
               },
@@ -30,8 +30,9 @@
               }
             },
             {
-              "title": "Java<br>Spring",
-              "exp": {
+              "name": "Java/Spring",
+              "name_plotly":"Java<br>Spring",
+              "experience": {
                 "value": 3,
                 "correction": 0
               },
@@ -41,8 +42,8 @@
               }
             },
             {
-              "title": "Python",
-              "exp": {
+              "name": "Python",
+              "experience": {
                 "value": 2,
                 "correction": 0
               },
@@ -52,8 +53,9 @@
               }
             },
             {
-              "title": "NodeJs<br>Typescript",
-              "exp": {
+              "name": "NodeJs/Typescript",
+              "name_plotly":"NodeJs<br>Typescript",
+              "experience": {
                 "value": 2,
                 "correction": 0
               },
@@ -63,8 +65,8 @@
               }
             },
             {
-              "title": "Scala",
-              "exp": {
+              "name": "Scala",
+              "experience": {
                 "value": 2,
                 "correction": 0
               },
@@ -77,10 +79,10 @@
         },
         {
           "name": "Data",
-          "entries": [
+          "skills": [
             {
-              "title": "NoSQL",
-              "exp": {
+              "name": "NoSQL",
+              "experience": {
                 "value": 1,
                 "correction": 0
               },
@@ -90,8 +92,8 @@
               }
             },
             {
-              "title": "Drools",
-              "exp": {
+              "name": "Drools",
+              "experience": {
                 "value": 2,
                 "correction": 0
               },
@@ -101,8 +103,8 @@
               }
             },
             {
-              "title": "RDBMS",
-              "exp": {
+              "name": "RDBMS",
+              "experience": {
                 "value": 2,
                 "correction": 0
               },
@@ -112,8 +114,8 @@
               }
             },
             {
-              "title": "GraphDB",
-              "exp": {
+              "name": "GraphDB",
+              "experience": {
                 "value": 1,
                 "correction": 0
               },
@@ -123,8 +125,8 @@
               }
             },
             {
-              "title": "Solr",
-              "exp": {
+              "name": "Solr",
+              "experience": {
                 "value": 1,
                 "correction": 0
               },
@@ -136,11 +138,12 @@
           ]
         },
         {
-          "name": "Service-<br>Communication",
-          "entries": [
+          "name": "Service-Communication",
+          "name_plotly":"Service-<br>Communication",
+          "skills": [
             {
-              "title": "SOAP",
-              "exp": {
+              "name": "SOAP",
+              "experience": {
                 "value": 2,
                 "correction": 0
               },
@@ -150,8 +153,8 @@
               }
             },
             {
-              "title": "REST",
-              "exp": {
+              "name": "REST",
+              "experience": {
                 "value": 2,
                 "correction": 0
               },
@@ -161,8 +164,8 @@
               }
             },
             {
-              "title": "JMS",
-              "exp": {
+              "name": "JMS",
+              "experience": {
                 "value": 2,
                 "correction": 0
               },
@@ -172,8 +175,8 @@
               }
             },
             {
-              "title": "Reactive",
-              "exp": {
+              "name": "Reactive",
+              "experience": {
                 "value": 1,
                 "correction": 0
               },
@@ -183,8 +186,8 @@
               }
             },
             {
-              "title": "Actors",
-              "exp": {
+              "name": "Actors",
+              "experience": {
                 "value": 1,
                 "correction": 0
               },
@@ -203,10 +206,10 @@
       "categories": [
         {
           "name": "Languages",
-          "entries": [
+          "skills": [
             {
-              "title": "Selenium",
-              "exp": {
+              "name": "Selenium",
+              "experience": {
                 "value": 2,
                 "correction": 0.1
               },
@@ -216,8 +219,9 @@
               }
             },
             {
-              "title": "HTML<br>CSS",
-              "exp": {
+              "name": "HTML / CSS",
+              "name_plotly":"HTML<br>CSS",
+              "experience": {
                 "value": 2,
                 "correction": 0
               },
@@ -227,8 +231,9 @@
               }
             },
             {
-              "title": "Templates<br>Mustache,Twig,...",
-              "exp": {
+              "name":"Templates(Mustache,Twig,...)",
+              "name_plotly": "Templates<br>Mustache,Twig,...",
+              "experience": {
                 "value": 2,
                 "correction": 0
               },
@@ -238,8 +243,8 @@
               }
             },
             {
-              "title": "ECMA 5/6/7",
-              "exp": {
+              "name": "ECMA 5/6/7",
+              "experience": {
                 "value": 2,
                 "correction": 0
               },
@@ -249,8 +254,8 @@
               }
             },
             {
-              "title": "SVG",
-              "exp": {
+              "name": "SVG",
+              "experience": {
                 "value": 1,
                 "correction": 0
               },
@@ -263,10 +268,11 @@
         },
         {
           "name": "Frameworks",
-          "entries": [
+          "skills": [
             {
-              "title": "gulp<br>browserify",
-              "exp": {
+              "name": "gulp / browserify",
+              "name_plotly":"gulp<br>browserify",
+              "experience": {
                 "value": 2,
                 "correction": 0.1
               },
@@ -276,8 +282,8 @@
               }
             },
             {
-              "title": "Angular",
-              "exp": {
+              "name": "Angular",
+              "experience": {
                 "value": 1,
                 "correction": 0
               },
@@ -287,8 +293,8 @@
               }
             },
             {
-              "title": "webpack<br>npm",
-              "exp": {
+              "name": "webpack",
+              "experience": {
                 "value": 1,
                 "correction": 0
               },
@@ -298,8 +304,8 @@
               }
             },
             {
-              "title": "React",
-              "exp": {
+              "name": "React",
+              "experience": {
                 "value": 1,
                 "correction": 0
               },
@@ -309,8 +315,9 @@
               }
             },
             {
-              "title": "PatternLab<br>Jest<br>Karma",
-              "exp": {
+              "name": "PatternLab/Jest/Karma",
+              "name_plotly": "PatternLab<br>Jest<br>Karma",
+              "experience": {
                 "value": 2,
                 "correction": 0
               },
@@ -329,10 +336,10 @@
       "categories": [
         {
           "name": "Systems",
-          "entries": [
+          "skills": [
             {
-              "title": "Win7",
-              "exp": {
+              "name": "Win7",
+              "experience": {
                 "value": 2,
                 "correction": 0
               },
@@ -342,8 +349,8 @@
               }
             },
             {
-              "title": "Mac",
-              "exp": {
+              "name": "Mac",
+              "experience": {
                 "value": 2,
                 "correction": 0
               },
@@ -353,8 +360,8 @@
               }
             },
             {
-              "title": "Win10",
-              "exp": {
+              "name": "Win10",
+              "experience": {
                 "value": 2,
                 "correction": 0
               },
@@ -364,8 +371,8 @@
               }
             },
             {
-              "title": "Linux",
-              "exp": {
+              "name": "Linux",
+              "experience": {
                 "value": 2,
                 "correction": 0
               },
@@ -378,10 +385,10 @@
         },
         {
           "name": "Virtualisation",
-          "entries": [
+          "skills": [
             {
-              "title": "VMs",
-              "exp": {
+              "name": "VMs",
+              "experience": {
                 "value": 2,
                 "correction": 0
               },
@@ -391,8 +398,8 @@
               }
             },
             {
-              "title": "Docker",
-              "exp": {
+              "name": "Docker",
+              "experience": {
                 "value": 2,
                 "correction": 0
               },
@@ -402,8 +409,8 @@
               }
             },
             {
-              "title": "Kybernetes",
-              "exp": {
+              "name": "Kybernetes",
+              "experience": {
                 "value": 1,
                 "correction": 0
               },
@@ -416,10 +423,10 @@
         },
         {
           "name": "Tools",
-          "entries": [
+          "skills": [
             {
-              "title": "Nagios",
-              "exp": {
+              "name": "Nagios",
+              "experience": {
                 "value": 1,
                 "correction": 0
               },
@@ -429,8 +436,8 @@
               }
             },
             {
-              "title": "JMeter",
-              "exp": {
+              "name": "JMeter",
+              "experience": {
                 "value": 2,
                 "correction": 0
               },
@@ -440,8 +447,8 @@
               }
             },
             {
-              "title": "Jenkins",
-              "exp": {
+              "name": "Jenkins",
+              "experience": {
                 "value": 1,
                 "correction": 0
               },
@@ -451,8 +458,8 @@
               }
             },
             {
-              "title": "Ansible",
-              "exp": {
+              "name": "Ansible",
+              "experience": {
                 "value": 1,
                 "correction": 0
               },
@@ -462,8 +469,8 @@
               }
             },
             {
-              "title": "Sonar",
-              "exp": {
+              "name": "Sonar",
+              "experience": {
                 "value": 1,
                 "correction": 0.2
               },
@@ -473,8 +480,8 @@
               }
             },
             {
-              "title": "XPath",
-              "exp": {
+              "name": "XPath",
+              "experience": {
                 "value": 2,
                 "correction": 0
               },
@@ -484,8 +491,8 @@
               }
             },
             {
-              "title": "RegExp",
-              "exp": {
+              "name": "Regexperience",
+              "experience": {
                 "value": 2,
                 "correction": 0
               },
@@ -495,8 +502,9 @@
               }
             },
             {
-              "title": "Spring<br>Integration",
-              "exp": {
+              "name": "Spring Integration",
+              "name_plotly": "Spring<br>Integration",
+              "experience": {
                 "value": 1,
                 "correction": 0
               },
@@ -506,8 +514,8 @@
               }
             },
             {
-              "title": "Gatling",
-              "exp": {
+              "name": "Gatling",
+              "experience": {
                 "value": 1,
                 "correction": 0
               },
@@ -517,8 +525,8 @@
               }
             },
             {
-              "title": "AWS",
-              "exp": {
+              "name": "AWS",
+              "experience": {
                 "value": 1,
                 "correction": 0
               },
@@ -537,10 +545,10 @@
       "categories": [
         {
           "name": "IT-related",
-          "entries": [
+          "skills": [
             {
-              "title": "'Coding-Ninja'",
-              "exp": {
+              "name": "'Coding-Ninja'",
+              "experience": {
                 "value": 1,
                 "correction": -0.4
               },
@@ -550,8 +558,8 @@
               }
             },
             {
-              "title": "Clean Code",
-              "exp": {
+              "name": "Clean Code",
+              "experience": {
                 "value": 2,
                 "correction": 0.2
               },
@@ -561,8 +569,9 @@
               }
             },
             {
-              "title": "Microservice<br>Architecture",
-              "exp": {
+              "name": "Microservice Architecture",
+              "name_plotly": "Microservice<br>Architecture",
+              "experience": {
                 "value": 2,
                 "correction": 0
               },
@@ -572,8 +581,8 @@
               }
             },
             {
-              "title": "Agile Testing",
-              "exp": {
+              "name": "Agile Testing",
+              "experience": {
                 "value": 2,
                 "correction": 0
               },
@@ -583,8 +592,8 @@
               }
             },
             {
-              "title": "TDD/BDD",
-              "exp": {
+              "name": "TDD/BDD",
+              "experience": {
                 "value": 3,
                 "correction": 0
               },
@@ -597,10 +606,10 @@
         },
         {
           "name": "Project-Management",
-          "entries": [
+          "skills": [
             {
-              "title": "Traditional PM",
-              "exp": {
+              "name": "Traditional PM",
+              "experience": {
                 "value": 2,
                 "correction": 0
               },
@@ -610,8 +619,9 @@
               }
             },
             {
-              "title": "Product<br>Owner",
-              "exp": {
+              "name": "Product Owner",
+              "name_plotly": "Product<br>Owner",
+              "experience": {
                 "value": 3,
                 "correction": 0
               },
@@ -621,8 +631,9 @@
               }
             },
             {
-              "title": "Scrum<br>Master",
-              "exp": {
+              "name": "Scrum Master",
+              "name_plotly": "Scrum<br>Master",
+              "experience": {
                 "value": 3,
                 "correction": 0
               },
@@ -632,8 +643,9 @@
               }
             },
             {
-              "title": "MVP<br>Thinking",
-              "exp": {
+              "name": "MVP Thinking",
+              "name_plotly": "MVP<br>Thinking",
+              "experience": {
                 "value": 2,
                 "correction": 0
               },
@@ -643,8 +655,8 @@
               }
             },
             {
-              "title": "Agile Transformation",
-              "exp": {
+              "name": "Agile Transformation",
+              "experience": {
                 "value": 3,
                 "correction": 0
               },
@@ -654,8 +666,9 @@
               }
             },
             {
-              "title": "Agile<br>Freestyle",
-              "exp": {
+              "name": "Agile Freestyle",
+              "name_plotly": "Agile<br>Freestyle",
+              "experience": {
                 "value": 3,
                 "correction": 0
               },
@@ -668,10 +681,10 @@
         },
         {
           "name": "Organisational",
-          "entries": [
+          "skills": [
             {
-              "title": "Statistical Analysis",
-              "exp": {
+              "name": "Statistical Analysis",
+              "experience": {
                 "value": 2,
                 "correction": 0
               },
@@ -681,8 +694,9 @@
               }
             },
             {
-              "title": "Office<br>Software",
-              "exp": {
+              "name": "Office Software",
+              "name_plotly": "Office<br>Software",
+              "experience": {
                 "value": 3,
                 "correction": 0.1
               },
@@ -692,8 +706,9 @@
               }
             },
             {
-              "title": "Jira<br>Confluence",
-              "exp": {
+              "name": "Jira / Confluence",
+              "name_plotly": "Jira<br>Confluence",
+              "experience": {
                 "value": 3,
                 "correction": 0.1
               },
@@ -703,8 +718,9 @@
               }
             },
             {
-              "title": "Labour<br>Psychology<br>(diploma)",
-              "exp": {
+              "name": "Labour Psychology(diploma)",
+              "name_plotly": "Labour<br>Psychology<br>(diploma)",
+              "experience": {
                 "value": 2,
                 "correction": -0.2
               },
@@ -714,8 +730,8 @@
               }
             },
             {
-              "title": "Personality Types",
-              "exp": {
+              "name": "Personality Types",
+              "experience": {
                 "value": 2,
                 "correction": 0
               },
@@ -725,8 +741,8 @@
               }
             },
             {
-              "title": "Servant Leadership",
-              "exp": {
+              "name": "Servant Leadership",
+              "experience": {
                 "value": 3,
                 "correction": 0
               },
@@ -744,11 +760,12 @@
       "id": "languages",
       "categories": [
         {
-          "name": "Foreign<br>Languages",
-          "entries": [
+          "name": "Foreign Languages",
+          "name_plotly": "Foreign<br>Languages",
+          "skills": [
             {
-              "title": "Arabic",
-              "exp": {
+              "name": "Arabic",
+              "experience": {
                 "value": 1,
                 "correction": 0
               },
@@ -758,8 +775,8 @@
               }
             },
             {
-              "title": "Farsi",
-              "exp": {
+              "name": "Farsi",
+              "experience": {
                 "value": 1,
                 "correction": 0
               },
@@ -769,8 +786,8 @@
               }
             },
             {
-              "title": "Latin",
-              "exp": {
+              "name": "Latin",
+              "experience": {
                 "value": 2,
                 "correction": 0.1
               },
@@ -780,8 +797,8 @@
               }
             },
             {
-              "title": "Italian",
-              "exp": {
+              "name": "Italian",
+              "experience": {
                 "value": 2,
                 "correction": 0.1
               },
@@ -791,8 +808,8 @@
               }
             },
             {
-              "title": "French",
-              "exp": {
+              "name": "French",
+              "experience": {
                 "value": 2,
                 "correction": 0.1
               },
@@ -802,8 +819,8 @@
               }
             },
             {
-              "title": "Spanish",
-              "exp": {
+              "name": "Spanish",
+              "experience": {
                 "value": 2,
                 "correction": 0
               },
@@ -813,8 +830,8 @@
               }
             },
             {
-              "title": "English",
-              "exp": {
+              "name": "English",
+              "experience": {
                 "value": 3,
                 "correction": 0
               },
@@ -827,10 +844,11 @@
         },
         {
           "name": "Music",
-          "entries": [
+          "skills": [
             {
-              "title": "Choir<br>Mastering",
-              "exp": {
+              "name": "Choir Mastering",
+              "name_plotly": "Choir<br>Mastering",
+              "experience": {
                 "value": 2,
                 "correction": 0
               },
@@ -840,8 +858,9 @@
               }
             },
             {
-              "title": "Church<br>Organ",
-              "exp": {
+              "name": "Church Organ",
+              "name_plotly": "Church<br>Organ",
+              "experience": {
                 "value": 2,
                 "correction": 0
               },
@@ -851,8 +870,8 @@
               }
             },
             {
-              "title": "(E)-Guitar",
-              "exp": {
+              "name": "(E)-Guitar",
+              "experience": {
                 "value": 2,
                 "correction": 0
               },
@@ -862,8 +881,8 @@
               }
             },
             {
-              "title": "Piano",
-              "exp": {
+              "name": "Piano",
+              "experience": {
                 "value": 3,
                 "correction": 0
               },
@@ -873,8 +892,8 @@
               }
             },
             {
-              "title": "Seaboard",
-              "exp": {
+              "name": "Seaboard",
+              "experience": {
                 "value": 1,
                 "correction": 0
               },
@@ -887,10 +906,10 @@
         },
         {
           "name": "Other",
-          "entries": [
+          "skills": [
             {
-              "title": "Art",
-              "exp": {
+              "name": "Art",
+              "experience": {
                 "value": 1,
                 "correction": 0
               },
@@ -900,15 +919,19 @@
               }
             },
             {
-              "title": "Literature",
+              "name": "Literature",
+              "experience": {
+                "value": 2,
+                "correction": 0
+              },
               "focus": {
                 "value": 2,
                 "correction": -0.2
               }
             },
             {
-              "title": "Science",
-              "exp": {
+              "name": "Science",
+              "experience": {
                 "value": 2,
                 "correction": 0
               },
@@ -918,8 +941,8 @@
               }
             },
             {
-              "title": "Politics",
-              "exp": {
+              "name": "Politics",
+              "experience": {
                 "value": 2,
                 "correction": 0
               },
