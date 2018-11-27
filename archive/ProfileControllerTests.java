@@ -22,7 +22,7 @@ import org.springframework.test.web.servlet.MockMvc;
 public class ProfileControllerTests {
 
   @Autowired
-  private ProfileController profileController;
+  private DomainController profileController;
 
   @Autowired
   private MockMvc mockMvc;

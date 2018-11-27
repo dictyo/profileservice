@@ -5,6 +5,31 @@
   "required": [
     "domains"
   ],
+  "definitions": {
+    "datapoint": {
+      "type": "object",
+      "required": [
+        "value"
+      ],
+      "properties": {
+        "value": {
+          "type": "integer",
+          "enum": [
+            1,
+            2,
+            3
+          ]
+        },
+        "correction": {
+          "type": [
+            "integer",
+            "number"
+          ],
+          "description": "Correction due to visual presentation in plotly."
+        }
+      }
+    }
+  },
   "properties": {
     "domains": {
       "type": "array",
@@ -59,49 +84,12 @@
                       "experience": {
                         "type": "object",
                         "description": "Experience: Ability to handle the subject passively(1), actively(2) or expertly(3)",
-                        "properties": {
-                          "value": {
-                            "type": "integer",
-                            "enum": [
-                              1,
-                              2,
-                              3
-                            ]
-                          },
-                          "correction": {
-                            "type": [
-                              "integer",
-                              "number"
-                            ],
-                            "description": "Correction due to visual presentation in plotly."
-                          }
-                        },
-                        "required": [
-                          "value"
-                        ]
+                        "$ref": "#/definitions/datapoint"
                       },
                       "focus": {
                         "type": "object",
-                        "properties": {
-                          "value": {
-                            "type": "integer",
-                            "enum": [
-                              1,
-                              2,
-                              3
-                            ]
-                          },
-                          "correction": {
-                            "type": [
-                              "number",
-                              "integer"
-                            ]
-                          }
-                        },
-                        "required": [
-                          "value",
-                          "correction"
-                        ]
+                        "description": "The Focus dimenstion measures, if I would like to use this ability rather not (1), very much(3) or if there is no prevalence(2).",
+                        "$ref": "#/definitions/datapoint"
                       }
                     }
                   }
@@ -110,9 +98,7 @@
             }
           }
         }
-
       }
     }
   }
 }
-

@@ -26,6 +26,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>1.8</java.version>
+        <cucumber.version>1.2.5</cucumber.version>
         <!--<tomcat.version>8.5.23</tomcat.version>-->
         <!--<springboot.version>1.5.8.RELEASE</springboot.version>-->
         <!--<jackson.version>2.8.5</jackson.version>-->
@@ -33,6 +34,13 @@
     </properties>
 
     <build>
+        <!-- Make available maven properties in the application's properties-->
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -48,7 +56,7 @@
                 <artifactId>jsonschema2pojo-maven-plugin</artifactId>
                 <version>0.5.1</version>
                 <configuration>
-                    <sourceDirectory>${basedir}/src/main/resources/data.json.schema</sourceDirectory>
+                    <sourceDirectory>${basedir}/src/main/resources/profile.schema.json</sourceDirectory>
                     <targetPackage>de.allmaennitta.model.generated</targetPackage>
                 </configuration>
                 <executions>
@@ -97,9 +105,11 @@
             <artifactId>jackson-databind</artifactId>
             <!--<version>${jackson.version}</version>-->
         </dependency>
+        <!-- Legacy version to build model pojos -->
         <dependency>
-            <groupId>org.apache.commons</groupId>
-            <artifactId>commons-lang3</artifactId>
+            <groupId>commons-lang</groupId>
+            <artifactId>commons-lang</artifactId>
+            <version>2.6</version>
         </dependency>
 
         <!--//DATA-->
@@ -147,6 +157,24 @@
             <groupId>io.rest-assured</groupId>
             <artifactId>rest-assured</artifactId>
             <version>LATEST</version>
+        </dependency>
+        <dependency>
+            <groupId>info.cukes</groupId>
+            <artifactId>cucumber-java</artifactId>
+            <version>${cucumber.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>info.cukes</groupId>
+            <artifactId>cucumber-junit</artifactId>
+            <version>${cucumber.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>info.cukes</groupId>
+            <artifactId>cucumber-spring</artifactId>
+            <version>${cucumber.version}</version>
+            <scope>test</scope>
         </dependency>
 
         <!--//TOMCAT-->

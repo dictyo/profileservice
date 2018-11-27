@@ -1,20 +1,38 @@
 package de.allmaennitta.profileservice;
 
+import de.allmaennitta.model.generated.Domain;
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
+import org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration;
+import org.springframework.boot.devtools.autoconfigure.DevToolsDataSourceAutoConfiguration;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.data.repository.Repository;
 
-@SpringBootApplication
+//@SpringBootApplication
+@Configuration
+@EnableAutoConfiguration(exclude = {
+  DevToolsDataSourceAutoConfiguration.class,
+  HibernateJpaAutoConfiguration.class,
+  DataSourceAutoConfiguration.class})
 public class Application {
 
-    public static void main(String[] args) {
-        SpringApplication.run(Application.class, args);
-    }
+  public static void main(String[] args) {
+    SpringApplication.run(Application.class, args);
+  }
 
-    @Bean
-    public ProfileController learnerController(){
-        return new ProfileController();
-    }
+  @Bean
+  public DomainController domainController(DomainRepository domainRepository) {
+    return new DomainController(domainRepository);
+  }
+
+  @Bean
+  public DomainRepository domainRepository() {
+    return new StaticDomainRepository();
+  }
+
 //    @Bean
 //    public CommandLineRunner commandLineRunner(ApplicationContext ctx) {
 //        return args -> {

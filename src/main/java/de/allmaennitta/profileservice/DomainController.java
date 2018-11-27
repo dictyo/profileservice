@@ -6,41 +6,46 @@ import java.util.List;
 import java.util.Map;
 import javax.servlet.http.HttpServletResponse;
 
+import de.allmaennitta.model.generated.Domain;
+import de.allmaennitta.model.generated.ProfileSchema;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.data.repository.Repository;
 import org.springframework.web.bind.annotation.*;
 
 import java.io.IOException;
 
 @RestController
-class ProfileController {
+class DomainController {
+  private static final Logger LOG = LoggerFactory.getLogger(DomainController.class);
 
-  private static final Logger LOG = LoggerFactory.getLogger(ProfileController.class);
+  @Value("${app.version}")
+  String version;
 
-  @Autowired
-  ProfileRepository profileRepository;
-
+  DomainRepository domainRepository;
   String root_redirect = "/profiles";
 
-  @RequestMapping(value = "/")
-  public void handleRootRequest(HttpServletResponse response) {
-    try {
-      response.sendRedirect(root_redirect);
-    } catch (IOException e) {
-      throw new IllegalStateException(
-          String.format("There is an error redirecting to URL %s", root_redirect));
-    }
+  public DomainController(DomainRepository domainRepository) {
+    this.domainRepository = domainRepository;
   }
 
-  @RequestMapping(value = "/profiles", method = RequestMethod.GET)
+//  @RequestMapping(value = "/")
+//  public void handleRootRequest(HttpServletResponse response) {
+//    try {
+//      response.sendRedirect(root_redirect);
+//    } catch (IOException e) {
+//      throw new IllegalStateException(
+//          String.format("There is an error redirecting to URL %s", root_redirect));
+//    }
+//  }
+
+  @RequestMapping(value = "/domains/{id}", method = RequestMethod.GET)
   @ResponseBody
-  Map<String,List<Profile>> allLearners() {
-    ArrayList<Profile> listOfProfiles = new ArrayList<>();
-    profileRepository.findAll().forEach(listOfProfiles::add);
-    Map learners = new HashMap();
-    learners.put("learners", listOfProfiles);
-    return learners;
+  Domain byName(@PathVariable("id") String id) {
+    return domainRepository.findById(id);
   }
 }
 //
@@ -52,7 +57,7 @@ class ProfileController {
 //        }
 //
 //@GetMapping(Array("/edit/{id}"))
-//  def edit(@PathVariable("id") id: Long, model: Model) = {
+//  def edit(@PathVariable("id") id: Long, model: Model) =
 //        model.addAttribute("hotel", hotelRepository.findOne(id))
 //        "hotels/edit"
 //        }
