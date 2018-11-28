@@ -7,6 +7,7 @@ import org.springframework.boot.test.web.client.TestRestTemplate;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.client.ClientHttpResponse;
 import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.web.WebAppConfiguration;
 import org.springframework.web.client.ResponseErrorHandler;
 import org.springframework.web.client.RestTemplate;
 
@@ -22,7 +23,7 @@ public class SpringIntegrationTest {
   static ResponseResults latestResponse = null;
 
   @Autowired
-  protected TestRestTemplate restTemplate;
+  TestRestTemplate restTemplate;
 
   void executeGet(String url) throws IOException {
     final Map<String, String> headers = new HashMap<>();
