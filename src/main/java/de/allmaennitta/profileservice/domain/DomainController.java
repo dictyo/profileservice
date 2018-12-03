@@ -1,51 +1,39 @@
-package de.allmaennitta.profileservice;
-
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import javax.servlet.http.HttpServletResponse;
+package de.allmaennitta.profileservice.domain;
 
 import de.allmaennitta.model.generated.Domain;
-import de.allmaennitta.model.generated.ProfileSchema;
+import java.util.Collections;
+import java.util.Map;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.data.repository.Repository;
-import org.springframework.web.bind.annotation.*;
-
-import java.io.IOException;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-class DomainController {
+public class DomainController {
   private static final Logger LOG = LoggerFactory.getLogger(DomainController.class);
 
-  @Value("${app.version}")
-  String version;
-
+  @Autowired
   DomainRepository domainRepository;
-  String root_redirect = "/profiles";
 
-  public DomainController(DomainRepository domainRepository) {
-    this.domainRepository = domainRepository;
+  @Value("${app.version}")
+  private String version;
+
+//  String root_redirect = "/profiles";
+
+  @RequestMapping(value = "/version", method = RequestMethod.GET)
+  public Map<String, String> getAppVersion() {
+    return Collections.singletonMap("version", version);
   }
 
-//  @RequestMapping(value = "/")
-//  public void handleRootRequest(HttpServletResponse response) {
-//    try {
-//      response.sendRedirect(root_redirect);
-//    } catch (IOException e) {
-//      throw new IllegalStateException(
-//          String.format("There is an error redirecting to URL %s", root_redirect));
-//    }
-//  }
 
   @RequestMapping(value = "/domains/{id}", method = RequestMethod.GET)
-  @ResponseBody
-  Domain byName(@PathVariable("id") String id) {
-    return domainRepository.findById(id);
+  public Domain byName(@PathVariable("id") String id) {
+    return domainRepository.findById(id).orElseThrow(()->
+        new WrongDomainIdException(String.format("There is no domain called '%s'",id)));
   }
 }
 //
@@ -93,3 +81,12 @@ class DomainController {
 //        hotelRepository.delete(id)
 //        "redirect:/hotels"
 //        }
+//  @RequestMapping(value = "/")
+//  public void handleRootRequest(HttpServletResponse response) {
+//    try {
+//      response.sendRedirect(root_redirect);
+//    } catch (IOException e) {
+//      throw new IllegalStateException(
+//          String.format("There is an error redirecting to URL %s", root_redirect));
+//    }
+//  }
