@@ -1,12 +1,13 @@
 package de.allmaennitta.profileservice.controller;
 
+import static org.hamcrest.collection.IsCollectionWithSize.hasSize;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 import de.allmaennitta.profileservice.Application;
+import org.hamcrest.core.StringContains;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -42,8 +43,21 @@ public class ProfileControllerTests {
         .accept(MediaType.parseMediaType("application/json;charset=UTF-8")))
         .andExpect(status().is2xxSuccessful())
         .andDo(print())
+        .andExpect(jsonPath("$.categories", hasSize(3)))
         .andExpect(jsonPath("$.categories[0].name").isString())
         .andExpect(jsonPath("$.categories[0].name").value("Languages"));
+  }
 
+  @Test
+  public void testGetWrongDomainId() throws Exception {
+    String wrongId = "backends";
+    this.mockMvc.perform(get("/domains/"+wrongId)
+        .accept(MediaType.parseMediaType("application/json")))
+        .andExpect(status().is4xxClientError())
+        .andDo(print())
+        .andExpect(jsonPath("code")
+            .value(StringContains.containsString(
+                String.format("no domain called '%s'",wrongId)
+            )));
   }
 }
