@@ -45,7 +45,7 @@ public class JsonSchemaGenerator {
     application.run(args);
   }
 
-  @Bean
+  //@Bean
   public CommandLineRunner schemaGenerator(ApplicationContext ctx) {
     return args -> {
       com.kjetland.jackson.jsonSchema.JsonSchemaGenerator jsonSchemaGenerator = new com.kjetland.jackson.jsonSchema.JsonSchemaGenerator(objectMapper);

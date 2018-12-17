@@ -346,6 +346,8 @@
     },
     {
       "name": "Win7",
+      "domain": "devops",
+      "category": "systems",
       "experience": {
         "value": 2,
         "correction": 0

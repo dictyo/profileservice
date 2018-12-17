@@ -1,8 +1,8 @@
 package de.allmaennitta.profileservice.domain;
 
-import de.allmaennitta.profileservice.model.Domain;
-import java.util.Optional;
+import de.allmaennitta.profileservice.model.Category;
+import java.util.List;
 
 public interface DomainRepository {
-  public Optional<Domain> findById(String domainName);
+  public List<Category> findById(String domainName);
 }

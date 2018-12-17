@@ -1,7 +1,9 @@
 package de.allmaennitta.profileservice.domain;
 
+import de.allmaennitta.profileservice.model.Category;
 import de.allmaennitta.profileservice.model.Domain;
 import java.util.Collections;
+import java.util.List;
 import java.util.Map;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -31,9 +33,8 @@ public class DomainController {
 
 
   @RequestMapping(value = "/domains/{id}", method = RequestMethod.GET)
-  public Domain byName(@PathVariable("id") String id) {
-    return domainRepository.findById(id).orElseThrow(()->
-        new WrongDomainIdException(String.format("There is no domain called '%s'",id)));
+  public List<Category> byName(@PathVariable("id") String id) {
+    return domainRepository.findById(id);
   }
 }
 //

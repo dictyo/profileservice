@@ -43,9 +43,10 @@ public class ProfileControllerTests {
         .accept(MediaType.parseMediaType("application/json;charset=UTF-8")))
         .andExpect(status().is2xxSuccessful())
         .andDo(print())
-        .andExpect(jsonPath("$.categories", hasSize(3)))
-        .andExpect(jsonPath("$.categories[0].name").isString())
-        .andExpect(jsonPath("$.categories[0].name").value("Languages"));
+        .andExpect(jsonPath("$", hasSize(3)))
+        .andExpect(jsonPath("$[0].name").isString())
+        .andExpect(jsonPath("$[0].name").value("Languages"))
+        .andExpect(jsonPath("$[0].skills[0].name").value("PHP"));
   }
 
   @Test
