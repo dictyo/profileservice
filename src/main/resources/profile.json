@@ -1,4 +1,1009 @@
 {
+  "skills": [
+    {
+      "name": "PHP",
+      "domain": "backend",
+      "category": "languages",
+      "experience": {
+        "value": 1,
+        "correction": 0
+      },
+      "focus": {
+        "value": 1,
+        "correction": -0.2
+      }
+    },
+    {
+      "name": "VBA",
+      "domain": "backend",
+      "category": "languages",
+      "experience": {
+        "value": 2,
+        "correction": 0
+      },
+      "focus": {
+        "value": 1,
+        "correction": 0.2
+      }
+    },
+    {
+      "name": "Java/Spring",
+      "domain": "backend",
+      "category": "languages",
+      "name_plotly": "Java<br>Spring",
+      "experience": {
+        "value": 3,
+        "correction": 0
+      },
+      "focus": {
+        "value": 2,
+        "correction": 0
+      }
+    },
+    {
+      "name": "Python",
+      "domain": "backend",
+      "category": "languages",
+      "experience": {
+        "value": 2,
+        "correction": 0
+      },
+      "focus": {
+        "value": 2,
+        "correction": 0
+      }
+    },
+    {
+      "name": "NodeJs/Typescript",
+      "name_plotly": "NodeJs<br>Typescript",
+      "domain": "backend",
+      "category": "languages",
+      "experience": {
+        "value": 2,
+        "correction": 0
+      },
+      "focus": {
+        "value": 2,
+        "correction": 0.2
+      }
+    },
+    {
+      "name": "Scala",
+      "domain": "backend",
+      "category": "languages",
+      "experience": {
+        "value": 2,
+        "correction": 0
+      },
+      "focus": {
+        "value": 3,
+        "correction": 0.2
+      }
+    },
+    {
+      "name": "NoSQL",
+      "domain": "backend",
+      "category": "data",
+      "experience": {
+        "value": 1,
+        "correction": 0
+      },
+      "focus": {
+        "value": 2,
+        "correction": 0
+      }
+    },
+    {
+      "name": "Drools",
+      "domain": "backend",
+      "category": "data",
+      "experience": {
+        "value": 2,
+        "correction": 0
+      },
+      "focus": {
+        "value": 2,
+        "correction": -0.2
+      }
+    },
+    {
+      "name": "RDBMS",
+      "domain": "backend",
+      "category": "data",
+      "experience": {
+        "value": 2,
+        "correction": 0
+      },
+      "focus": {
+        "value": 2,
+        "correction": 0
+      }
+    },
+    {
+      "name": "GraphDB",
+      "domain": "backend",
+      "category": "data",
+      "experience": {
+        "value": 1,
+        "correction": 0
+      },
+      "focus": {
+        "value": 3,
+        "correction": 0.1
+      }
+    },
+    {
+      "name": "Solr",
+      "domain": "backend",
+      "category": "data",
+      "experience": {
+        "value": 1,
+        "correction": 0
+      },
+      "focus": {
+        "value": 3,
+        "correction": 0.3
+      }
+    },
+    {
+      "name": "SOAP",
+      "domain": "backend",
+      "category": "communication",
+      "experience": {
+        "value": 2,
+        "correction": 0
+      },
+      "focus": {
+        "value": 1,
+        "correction": 0
+      }
+    },
+    {
+      "name": "REST",
+      "domain": "backend",
+      "category": "communication",
+      "experience": {
+        "value": 2,
+        "correction": 0
+      },
+      "focus": {
+        "value": 2,
+        "correction": -0.2
+      }
+    },
+    {
+      "name": "JMS",
+      "domain": "backend",
+      "category": "communication",
+      "experience": {
+        "value": 2,
+        "correction": 0
+      },
+      "focus": {
+        "value": 2,
+        "correction": 0.2
+      }
+    },
+    {
+      "name": "Reactive",
+      "domain": "backend",
+      "category": "communication",
+      "experience": {
+        "value": 1,
+        "correction": 0
+      },
+      "focus": {
+        "value": 2,
+        "correction": 0
+      }
+    },
+    {
+      "name": "Actors",
+      "domain": "backend",
+      "category": "communication",
+      "experience": {
+        "value": 1,
+        "correction": 0
+      },
+      "focus": {
+        "value": 3,
+        "correction": 0
+      }
+    },
+    {
+      "name": "Selenium",
+      "domain": "frontend",
+      "category": "frameworks",
+      "experience": {
+        "value": 2,
+        "correction": 0.1
+      },
+      "focus": {
+        "value": 1,
+        "correction": -0.2
+      }
+    },
+    {
+      "name": "HTML / CSS",
+      "name_plotly": "HTML<br>CSS",
+      "domain": "frontend",
+      "category": "languages",
+      "experience": {
+        "value": 2,
+        "correction": 0
+      },
+      "focus": {
+        "value": 1,
+        "correction": 0.2
+      }
+    },
+    {
+      "name": "Templates(Mustache,Twig,...)",
+      "name_plotly": "Templates<br>Mustache,Twig,...",
+      "domain": "frontend",
+      "category": "languages",
+      "experience": {
+        "value": 2,
+        "correction": 0
+      },
+      "focus": {
+        "value": 2,
+        "correction": -0.2
+      }
+    },
+    {
+      "name": "ECMA 5/6/7",
+      "domain": "frontend",
+      "category": "languages",
+      "experience": {
+        "value": 2,
+        "correction": 0
+      },
+      "focus": {
+        "value": 2,
+        "correction": 0.2
+      }
+    },
+    {
+      "name": "SVG",
+      "domain": "frontend",
+      "category": "languages",
+      "experience": {
+        "value": 1,
+        "correction": 0
+      },
+      "focus": {
+        "value": 2,
+        "correction": 0
+      }
+    },
+    {
+      "name": "gulp / browserify",
+      "name_plotly": "gulp<br>browserify",
+      "domain": "frontend",
+      "category": "frameworks",
+      "experience": {
+        "value": 2,
+        "correction": 0.1
+      },
+      "focus": {
+        "value": 1,
+        "correction": 0
+      }
+    },
+    {
+      "name": "Angular",
+      "domain": "frontend",
+      "category": "frameworks",
+      "experience": {
+        "value": 1,
+        "correction": 0
+      },
+      "focus": {
+        "value": 2,
+        "correction": -0.2
+      }
+    },
+    {
+      "name": "webpack",
+      "domain": "frontend",
+      "category": "frameworks",
+      "experience": {
+        "value": 1,
+        "correction": 0
+      },
+      "focus": {
+        "value": 2,
+        "correction": 0
+      }
+    },
+    {
+      "name": "React",
+      "domain": "frontend",
+      "category": "frameworks",
+      "experience": {
+        "value": 1,
+        "correction": 0
+      },
+      "focus": {
+        "value": 3,
+        "correction": 0
+      }
+    },
+    {
+      "name": "PatternLab/Jest/Karma",
+      "name_plotly": "PatternLab<br>Jest<br>Karma",
+      "domain": "frontend",
+      "category": "frameworks",
+      "experience": {
+        "value": 2,
+        "correction": 0
+      },
+      "focus": {
+        "value": 3,
+        "correction": 0
+      }
+    },
+    {
+      "name": "Win7",
+      "experience": {
+        "value": 2,
+        "correction": 0
+      },
+      "focus": {
+        "value": 1,
+        "correction": -0.2
+      }
+    },
+    {
+      "name": "Mac",
+      "domain": "devops",
+      "category": "systems",
+      "experience": {
+        "value": 2,
+        "correction": 0
+      },
+      "focus": {
+        "value": 1,
+        "correction": 0
+      }
+    },
+    {
+      "name": "Win10",
+      "domain": "devops",
+      "category": "systems",
+      "experience": {
+        "value": 2,
+        "correction": 0
+      },
+      "focus": {
+        "value": 2,
+        "correction": 0
+      }
+    },
+    {
+      "name": "Linux",
+      "domain": "devops",
+      "category": "systems",
+      "experience": {
+        "value": 2,
+        "correction": 0
+      },
+      "focus": {
+        "value": 3,
+        "correction": 0
+      }
+    },
+    {
+      "name": "VMs",
+      "domain": "devops",
+      "category": "virtualisation",
+      "experience": {
+        "value": 2,
+        "correction": 0
+      },
+      "focus": {
+        "value": 1,
+        "correction": 0
+      }
+    },
+    {
+      "name": "Docker",
+      "domain": "devops",
+      "category": "virtualisation",
+      "experience": {
+        "value": 2,
+        "correction": 0
+      },
+      "focus": {
+        "value": 3,
+        "correction": -0.2
+      }
+    },
+    {
+      "name": "Kybernetes",
+      "domain": "devops",
+      "category": "virtualisation",
+      "experience": {
+        "value": 1,
+        "correction": 0
+      },
+      "focus": {
+        "value": 3,
+        "correction": 0
+      }
+    },
+    {
+      "name": "Nagios",
+      "domain": "devops",
+      "category": "tools",
+      "experience": {
+        "value": 1,
+        "correction": 0
+      },
+      "focus": {
+        "value": 1,
+        "correction": 0
+      }
+    },
+    {
+      "name": "JMeter",
+      "domain": "devops",
+      "category": "tools",
+      "experience": {
+        "value": 2,
+        "correction": 0
+      },
+      "focus": {
+        "value": 1,
+        "correction": 0
+      }
+    },
+    {
+      "name": "Jenkins",
+      "domain": "devops",
+      "category": "tools",
+      "experience": {
+        "value": 1,
+        "correction": 0
+      },
+      "focus": {
+        "value": 2,
+        "correction": -0.2
+      }
+    },
+    {
+      "name": "Ansible",
+      "domain": "devops",
+      "category": "tools",
+      "experience": {
+        "value": 1,
+        "correction": 0
+      },
+      "focus": {
+        "value": 2,
+        "correction": 0
+      }
+    },
+    {
+      "name": "Sonar",
+      "domain": "devops",
+      "category": "tools",
+      "experience": {
+        "value": 1,
+        "correction": 0.2
+      },
+      "focus": {
+        "value": 2,
+        "correction": 0
+      }
+    },
+    {
+      "name": "XPath",
+      "domain": "devops",
+      "category": "tools",
+      "experience": {
+        "value": 2,
+        "correction": 0
+      },
+      "focus": {
+        "value": 2,
+        "correction": -0.2
+      }
+    },
+    {
+      "name": "Regexperience",
+      "domain": "devops",
+      "category": "tools",
+      "experience": {
+        "value": 2,
+        "correction": 0
+      },
+      "focus": {
+        "value": 2,
+        "correction": 0.2
+      }
+    },
+    {
+      "name": "Spring Integration",
+      "domain": "devops",
+      "category": "tools",
+      "name_plotly": "Spring<br>Integration",
+      "experience": {
+        "value": 1,
+        "correction": 0
+      },
+      "focus": {
+        "value": 3,
+        "correction": -0.2
+      }
+    },
+    {
+      "name": "Gatling",
+      "domain": "devops",
+      "category": "tools",
+      "experience": {
+        "value": 1,
+        "correction": 0
+      },
+      "focus": {
+        "value": 3,
+        "correction": 0
+      }
+    },
+    {
+      "name": "AWS",
+      "domain": "devops",
+      "category": "tools",
+      "experience": {
+        "value": 1,
+        "correction": 0
+      },
+      "focus": {
+        "value": 3,
+        "correction": 0.2
+      }
+    },
+    {
+      "name": "'Coding-Ninja'",
+      "domain": "methodology",
+      "category": "it",
+      "experience": {
+        "value": 1,
+        "correction": -0.4
+      },
+      "focus": {
+        "value": 1,
+        "correction": -0.2
+      }
+    },
+    {
+      "name": "Clean Code",
+      "domain": "methodology",
+      "category": "it",
+      "experience": {
+        "value": 2,
+        "correction": 0.2
+      },
+      "focus": {
+        "value": 2,
+        "correction": -0.2
+      }
+    },
+    {
+      "name": "Microservice Architecture",
+      "name_plotly": "Microservice<br>Architecture",
+      "domain": "methodology",
+      "category": "it",
+      "experience": {
+        "value": 2,
+        "correction": 0
+      },
+      "focus": {
+        "value": 2,
+        "correction": 0.2
+      }
+    },
+    {
+      "name": "Agile Testing",
+      "domain": "methodology",
+      "category": "it",
+      "experience": {
+        "value": 2,
+        "correction": 0
+      },
+      "focus": {
+        "value": 3,
+        "correction": 0
+      }
+    },
+    {
+      "name": "TDD/BDD",
+      "domain": "methodology",
+      "category": "it",
+      "experience": {
+        "value": 3,
+        "correction": 0
+      },
+      "focus": {
+        "value": 3,
+        "correction": 0
+      }
+    },
+    {
+      "name": "Traditional PM",
+      "domain": "methodology",
+      "category": "pm",
+      "experience": {
+        "value": 2,
+        "correction": 0
+      },
+      "focus": {
+        "value": 1,
+        "correction": 0
+      }
+    },
+    {
+      "name": "Product Owner",
+      "name_plotly": "Product<br>Owner",
+      "domain": "methodology",
+      "category": "pm",
+      "experience": {
+        "value": 3,
+        "correction": 0
+      },
+      "focus": {
+        "value": 1,
+        "correction": 0
+      }
+    },
+    {
+      "name": "Scrum Master",
+      "name_plotly": "Scrum<br>Master",
+      "domain": "methodology",
+      "category": "pm",
+      "experience": {
+        "value": 3,
+        "correction": 0
+      },
+      "focus": {
+        "value": 1,
+        "correction": 0.2
+      }
+    },
+    {
+      "name": "MVP Thinking",
+      "name_plotly": "MVP<br>Thinking",
+      "domain": "methodology",
+      "category": "pm",
+      "experience": {
+        "value": 2,
+        "correction": 0
+      },
+      "focus": {
+        "value": 2,
+        "correction": 0.2
+      }
+    },
+    {
+      "name": "Agile Transformation",
+      "domain": "methodology",
+      "category": "pm",
+      "experience": {
+        "value": 3,
+        "correction": 0
+      },
+      "focus": {
+        "value": 2,
+        "correction": 0
+      }
+    },
+    {
+      "name": "Agile Freestyle",
+      "name_plotly": "Agile<br>Freestyle",
+      "domain": "methodology",
+      "category": "pm",
+      "experience": {
+        "value": 3,
+        "correction": 0
+      },
+      "focus": {
+        "value": 3,
+        "correction": -0.2
+      }
+    },
+    {
+      "name": "Statistical Analysis",
+      "domain": "methodology",
+      "category": "organisational",
+      "experience": {
+        "value": 2,
+        "correction": 0
+      },
+      "focus": {
+        "value": 1,
+        "correction": 0
+      }
+    },
+    {
+      "name": "Office Software",
+      "name_plotly": "Office<br>Software",
+      "domain": "methodology",
+      "category": "organisational",
+      "experience": {
+        "value": 3,
+        "correction": 0.1
+      },
+      "focus": {
+        "value": 1,
+        "correction": -0.2
+      }
+    },
+    {
+      "name": "Jira / Confluence",
+      "name_plotly": "Jira<br>Confluence",
+      "domain": "methodology",
+      "category": "organisational",
+      "experience": {
+        "value": 3,
+        "correction": 0.1
+      },
+      "focus": {
+        "value": 1,
+        "correction": 0.2
+      }
+    },
+    {
+      "name": "Labour Psychology(diploma)",
+      "name_plotly": "Labour<br>Psychology<br>(diploma)",
+      "domain": "methodology",
+      "category": "organisational",
+      "experience": {
+        "value": 2,
+        "correction": -0.2
+      },
+      "focus": {
+        "value": 2,
+        "correction": 0
+      }
+    },
+    {
+      "name": "Personality Types",
+      "domain": "methodology",
+      "category": "organisational",
+      "experience": {
+        "value": 2,
+        "correction": 0
+      },
+      "focus": {
+        "value": 3,
+        "correction": 0
+      }
+    },
+    {
+      "name": "Servant Leadership",
+      "domain": "methodology",
+      "category": "organisational",
+      "experience": {
+        "value": 3,
+        "correction": 0
+      },
+      "focus": {
+        "value": 3,
+        "correction": 0
+      }
+    },
+    {
+      "name": "Arabic",
+      "domain": "various",
+      "category": "foreign",
+      "experience": {
+        "value": 1,
+        "correction": 0
+      },
+      "focus": {
+        "value": 1,
+        "correction": -0.2
+      }
+    },
+    {
+      "name": "Farsi",
+      "domain": "various",
+      "category": "foreign",
+      "experience": {
+        "value": 1,
+        "correction": 0
+      },
+      "focus": {
+        "value": 1,
+        "correction": 0
+      }
+    },
+    {
+      "name": "Latin",
+      "domain": "various",
+      "category": "foreign",
+      "experience": {
+        "value": 2,
+        "correction": 0.1
+      },
+      "focus": {
+        "value": 1,
+        "correction": -0.2
+      }
+    },
+    {
+      "name": "Italian",
+      "domain": "various",
+      "category": "foreign",
+      "experience": {
+        "value": 2,
+        "correction": 0.1
+      },
+      "focus": {
+        "value": 1,
+        "correction": 0
+      }
+    },
+    {
+      "name": "French",
+      "domain": "various",
+      "category": "foreign",
+      "experience": {
+        "value": 2,
+        "correction": 0.1
+      },
+      "focus": {
+        "value": 1,
+        "correction": 0.2
+      }
+    },
+    {
+      "name": "Spanish",
+      "domain": "various",
+      "category": "foreign",
+      "experience": {
+        "value": 2,
+        "correction": 0
+      },
+      "focus": {
+        "value": 2,
+        "correction": 0
+      }
+    },
+    {
+      "name": "English",
+      "domain": "various",
+      "category": "foreign",
+      "experience": {
+        "value": 3,
+        "correction": 0
+      },
+      "focus": {
+        "value": 3,
+        "correction": 0
+      }
+    },
+    {
+      "name": "Choir Mastering",
+      "name_plotly": "Choir<br>Mastering",
+      "domain": "various",
+      "category": "music",
+      "experience": {
+        "value": 2,
+        "correction": 0
+      },
+      "focus": {
+        "value": 1,
+        "correction": -0.2
+      }
+    },
+    {
+      "name": "Church Organ",
+      "name_plotly": "Church<br>Organ",
+      "domain": "various",
+      "category": "music",
+      "experience": {
+        "value": 2,
+        "correction": 0
+      },
+      "focus": {
+        "value": 1,
+        "correction": 0
+      }
+    },
+    {
+      "name": "(E)-Guitar",
+      "domain": "various",
+      "category": "music",
+      "experience": {
+        "value": 2,
+        "correction": 0
+      },
+      "focus": {
+        "value": 1,
+        "correction": 0.2
+      }
+    },
+    {
+      "name": "Piano",
+      "domain": "various",
+      "category": "music",
+      "experience": {
+        "value": 3,
+        "correction": 0
+      },
+      "focus": {
+        "value": 1,
+        "correction": 0
+      }
+    },
+    {
+      "name": "Seaboard",
+      "domain": "various",
+      "category": "music",
+      "experience": {
+        "value": 1,
+        "correction": 0
+      },
+      "focus": {
+        "value": 3,
+        "correction": 0
+      }
+    },
+    {
+      "name": "Art",
+      "domain": "various",
+      "category": "other",
+      "experience": {
+        "value": 1,
+        "correction": 0
+      },
+      "focus": {
+        "value": 1,
+        "correction": 0
+      }
+    },
+    {
+      "name": "Literature",
+      "domain": "various",
+      "category": "other",
+      "experience": {
+        "value": 2,
+        "correction": 0
+      },
+      "focus": {
+        "value": 2,
+        "correction": -0.2
+      }
+    },
+    {
+      "name": "Science",
+      "domain": "various",
+      "category": "other",
+      "experience": {
+        "value": 2,
+        "correction": 0
+      },
+      "focus": {
+        "value": 2,
+        "correction": 0
+      }
+    },
+    {
+      "name": "Politics",
+      "domain": "various",
+      "category": "other",
+      "experience": {
+        "value": 2,
+        "correction": 0
+      },
+      "focus": {
+        "value": 3,
+        "correction": 0
+      }
+    }
+  ],
   "domains": [
     {
       "name": "Backend Skills",
@@ -6,197 +1011,16 @@
       "categories": [
         {
           "name": "Languages",
-          "skills": [
-            {
-              "name": "PHP",
-              "experience": {
-                "value": 1,
-                "correction": 0
-              },
-              "focus": {
-                "value": 1,
-                "correction": -0.2
-              }
-            },
-            {
-              "name": "VBA",
-              "experience": {
-                "value": 2,
-                "correction": 0
-              },
-              "focus": {
-                "value": 1,
-                "correction": 0.2
-              }
-            },
-            {
-              "name": "Java/Spring",
-              "name_plotly":"Java<br>Spring",
-              "experience": {
-                "value": 3,
-                "correction": 0
-              },
-              "focus": {
-                "value": 2,
-                "correction": 0
-              }
-            },
-            {
-              "name": "Python",
-              "experience": {
-                "value": 2,
-                "correction": 0
-              },
-              "focus": {
-                "value": 2,
-                "correction": 0
-              }
-            },
-            {
-              "name": "NodeJs/Typescript",
-              "name_plotly":"NodeJs<br>Typescript",
-              "experience": {
-                "value": 2,
-                "correction": 0
-              },
-              "focus": {
-                "value": 2,
-                "correction": 0.2
-              }
-            },
-            {
-              "name": "Scala",
-              "experience": {
-                "value": 2,
-                "correction": 0
-              },
-              "focus": {
-                "value": 3,
-                "correction": 0.2
-              }
-            }
-          ]
+          "id": "languages"
         },
         {
           "name": "Data",
-          "skills": [
-            {
-              "name": "NoSQL",
-              "experience": {
-                "value": 1,
-                "correction": 0
-              },
-              "focus": {
-                "value": 2,
-                "correction": 0
-              }
-            },
-            {
-              "name": "Drools",
-              "experience": {
-                "value": 2,
-                "correction": 0
-              },
-              "focus": {
-                "value": 2,
-                "correction": -0.2
-              }
-            },
-            {
-              "name": "RDBMS",
-              "experience": {
-                "value": 2,
-                "correction": 0
-              },
-              "focus": {
-                "value": 2,
-                "correction": 0
-              }
-            },
-            {
-              "name": "GraphDB",
-              "experience": {
-                "value": 1,
-                "correction": 0
-              },
-              "focus": {
-                "value": 3,
-                "correction": 0.1
-              }
-            },
-            {
-              "name": "Solr",
-              "experience": {
-                "value": 1,
-                "correction": 0
-              },
-              "focus": {
-                "value": 3,
-                "correction": 0.3
-              }
-            }
-          ]
+          "id": "data"
         },
         {
           "name": "Service-Communication",
-          "name_plotly":"Service-<br>Communication",
-          "skills": [
-            {
-              "name": "SOAP",
-              "experience": {
-                "value": 2,
-                "correction": 0
-              },
-              "focus": {
-                "value": 1,
-                "correction": 0
-              }
-            },
-            {
-              "name": "REST",
-              "experience": {
-                "value": 2,
-                "correction": 0
-              },
-              "focus": {
-                "value": 2,
-                "correction": -0.2
-              }
-            },
-            {
-              "name": "JMS",
-              "experience": {
-                "value": 2,
-                "correction": 0
-              },
-              "focus": {
-                "value": 2,
-                "correction": 0.2
-              }
-            },
-            {
-              "name": "Reactive",
-              "experience": {
-                "value": 1,
-                "correction": 0
-              },
-              "focus": {
-                "value": 2,
-                "correction": 0
-              }
-            },
-            {
-              "name": "Actors",
-              "experience": {
-                "value": 1,
-                "correction": 0
-              },
-              "focus": {
-                "value": 3,
-                "correction": 0
-              }
-            }
-          ]
+          "name_plotly": "Service-<br>Communication",
+          "id": "communication"
         }
       ]
     },
@@ -206,127 +1030,11 @@
       "categories": [
         {
           "name": "Languages",
-          "skills": [
-            {
-              "name": "Selenium",
-              "experience": {
-                "value": 2,
-                "correction": 0.1
-              },
-              "focus": {
-                "value": 1,
-                "correction": -0.2
-              }
-            },
-            {
-              "name": "HTML / CSS",
-              "name_plotly":"HTML<br>CSS",
-              "experience": {
-                "value": 2,
-                "correction": 0
-              },
-              "focus": {
-                "value": 1,
-                "correction": 0.2
-              }
-            },
-            {
-              "name":"Templates(Mustache,Twig,...)",
-              "name_plotly": "Templates<br>Mustache,Twig,...",
-              "experience": {
-                "value": 2,
-                "correction": 0
-              },
-              "focus": {
-                "value": 2,
-                "correction": -0.2
-              }
-            },
-            {
-              "name": "ECMA 5/6/7",
-              "experience": {
-                "value": 2,
-                "correction": 0
-              },
-              "focus": {
-                "value": 2,
-                "correction": 0.2
-              }
-            },
-            {
-              "name": "SVG",
-              "experience": {
-                "value": 1,
-                "correction": 0
-              },
-              "focus": {
-                "value": 2,
-                "correction": 0
-              }
-            }
-          ]
+          "id": "languages"
         },
         {
           "name": "Frameworks",
-          "skills": [
-            {
-              "name": "gulp / browserify",
-              "name_plotly":"gulp<br>browserify",
-              "experience": {
-                "value": 2,
-                "correction": 0.1
-              },
-              "focus": {
-                "value": 1,
-                "correction": 0
-              }
-            },
-            {
-              "name": "Angular",
-              "experience": {
-                "value": 1,
-                "correction": 0
-              },
-              "focus": {
-                "value": 2,
-                "correction": -0.2
-              }
-            },
-            {
-              "name": "webpack",
-              "experience": {
-                "value": 1,
-                "correction": 0
-              },
-              "focus": {
-                "value": 2,
-                "correction": 0
-              }
-            },
-            {
-              "name": "React",
-              "experience": {
-                "value": 1,
-                "correction": 0
-              },
-              "focus": {
-                "value": 3,
-                "correction": 0
-              }
-            },
-            {
-              "name": "PatternLab/Jest/Karma",
-              "name_plotly": "PatternLab<br>Jest<br>Karma",
-              "experience": {
-                "value": 2,
-                "correction": 0
-              },
-              "focus": {
-                "value": 3,
-                "correction": 0
-              }
-            }
-          ]
+          "id": "frameworks"
         }
       ]
     },
@@ -336,206 +1044,15 @@
       "categories": [
         {
           "name": "Systems",
-          "skills": [
-            {
-              "name": "Win7",
-              "experience": {
-                "value": 2,
-                "correction": 0
-              },
-              "focus": {
-                "value": 1,
-                "correction": -0.2
-              }
-            },
-            {
-              "name": "Mac",
-              "experience": {
-                "value": 2,
-                "correction": 0
-              },
-              "focus": {
-                "value": 1,
-                "correction": 0
-              }
-            },
-            {
-              "name": "Win10",
-              "experience": {
-                "value": 2,
-                "correction": 0
-              },
-              "focus": {
-                "value": 2,
-                "correction": 0
-              }
-            },
-            {
-              "name": "Linux",
-              "experience": {
-                "value": 2,
-                "correction": 0
-              },
-              "focus": {
-                "value": 3,
-                "correction": 0
-              }
-            }
-          ]
+          "id": "systems"
         },
         {
           "name": "Virtualisation",
-          "skills": [
-            {
-              "name": "VMs",
-              "experience": {
-                "value": 2,
-                "correction": 0
-              },
-              "focus": {
-                "value": 1,
-                "correction": 0
-              }
-            },
-            {
-              "name": "Docker",
-              "experience": {
-                "value": 2,
-                "correction": 0
-              },
-              "focus": {
-                "value": 3,
-                "correction": -0.2
-              }
-            },
-            {
-              "name": "Kybernetes",
-              "experience": {
-                "value": 1,
-                "correction": 0
-              },
-              "focus": {
-                "value": 3,
-                "correction": 0
-              }
-            }
-          ]
+          "id": "virtualisation"
         },
         {
           "name": "Tools",
-          "skills": [
-            {
-              "name": "Nagios",
-              "experience": {
-                "value": 1,
-                "correction": 0
-              },
-              "focus": {
-                "value": 1,
-                "correction": 0
-              }
-            },
-            {
-              "name": "JMeter",
-              "experience": {
-                "value": 2,
-                "correction": 0
-              },
-              "focus": {
-                "value": 1,
-                "correction": 0
-              }
-            },
-            {
-              "name": "Jenkins",
-              "experience": {
-                "value": 1,
-                "correction": 0
-              },
-              "focus": {
-                "value": 2,
-                "correction": -0.2
-              }
-            },
-            {
-              "name": "Ansible",
-              "experience": {
-                "value": 1,
-                "correction": 0
-              },
-              "focus": {
-                "value": 2,
-                "correction": 0
-              }
-            },
-            {
-              "name": "Sonar",
-              "experience": {
-                "value": 1,
-                "correction": 0.2
-              },
-              "focus": {
-                "value": 2,
-                "correction": 0
-              }
-            },
-            {
-              "name": "XPath",
-              "experience": {
-                "value": 2,
-                "correction": 0
-              },
-              "focus": {
-                "value": 2,
-                "correction": -0.2
-              }
-            },
-            {
-              "name": "Regexperience",
-              "experience": {
-                "value": 2,
-                "correction": 0
-              },
-              "focus": {
-                "value": 2,
-                "correction": 0.2
-              }
-            },
-            {
-              "name": "Spring Integration",
-              "name_plotly": "Spring<br>Integration",
-              "experience": {
-                "value": 1,
-                "correction": 0
-              },
-              "focus": {
-                "value": 3,
-                "correction": -0.2
-              }
-            },
-            {
-              "name": "Gatling",
-              "experience": {
-                "value": 1,
-                "correction": 0
-              },
-              "focus": {
-                "value": 3,
-                "correction": 0
-              }
-            },
-            {
-              "name": "AWS",
-              "experience": {
-                "value": 1,
-                "correction": 0
-              },
-              "focus": {
-                "value": 3,
-                "correction": 0.2
-              }
-            }
-          ]
+          "id": "tools"
         }
       ]
     },
@@ -545,413 +1062,34 @@
       "categories": [
         {
           "name": "IT-related",
-          "skills": [
-            {
-              "name": "'Coding-Ninja'",
-              "experience": {
-                "value": 1,
-                "correction": -0.4
-              },
-              "focus": {
-                "value": 1,
-                "correction": -0.2
-              }
-            },
-            {
-              "name": "Clean Code",
-              "experience": {
-                "value": 2,
-                "correction": 0.2
-              },
-              "focus": {
-                "value": 2,
-                "correction": -0.2
-              }
-            },
-            {
-              "name": "Microservice Architecture",
-              "name_plotly": "Microservice<br>Architecture",
-              "experience": {
-                "value": 2,
-                "correction": 0
-              },
-              "focus": {
-                "value": 2,
-                "correction": 0.2
-              }
-            },
-            {
-              "name": "Agile Testing",
-              "experience": {
-                "value": 2,
-                "correction": 0
-              },
-              "focus": {
-                "value": 3,
-                "correction": 0
-              }
-            },
-            {
-              "name": "TDD/BDD",
-              "experience": {
-                "value": 3,
-                "correction": 0
-              },
-              "focus": {
-                "value": 3,
-                "correction": 0
-              }
-            }
-          ]
+          "id": "it"
         },
         {
           "name": "Project-Management",
-          "skills": [
-            {
-              "name": "Traditional PM",
-              "experience": {
-                "value": 2,
-                "correction": 0
-              },
-              "focus": {
-                "value": 1,
-                "correction": 0
-              }
-            },
-            {
-              "name": "Product Owner",
-              "name_plotly": "Product<br>Owner",
-              "experience": {
-                "value": 3,
-                "correction": 0
-              },
-              "focus": {
-                "value": 1,
-                "correction": 0
-              }
-            },
-            {
-              "name": "Scrum Master",
-              "name_plotly": "Scrum<br>Master",
-              "experience": {
-                "value": 3,
-                "correction": 0
-              },
-              "focus": {
-                "value": 1,
-                "correction": 0.2
-              }
-            },
-            {
-              "name": "MVP Thinking",
-              "name_plotly": "MVP<br>Thinking",
-              "experience": {
-                "value": 2,
-                "correction": 0
-              },
-              "focus": {
-                "value": 2,
-                "correction": 0.2
-              }
-            },
-            {
-              "name": "Agile Transformation",
-              "experience": {
-                "value": 3,
-                "correction": 0
-              },
-              "focus": {
-                "value": 2,
-                "correction": 0
-              }
-            },
-            {
-              "name": "Agile Freestyle",
-              "name_plotly": "Agile<br>Freestyle",
-              "experience": {
-                "value": 3,
-                "correction": 0
-              },
-              "focus": {
-                "value": 3,
-                "correction": -0.2
-              }
-            }
-          ]
+          "id": "pm"
         },
         {
           "name": "Organisational",
-          "skills": [
-            {
-              "name": "Statistical Analysis",
-              "experience": {
-                "value": 2,
-                "correction": 0
-              },
-              "focus": {
-                "value": 1,
-                "correction": 0
-              }
-            },
-            {
-              "name": "Office Software",
-              "name_plotly": "Office<br>Software",
-              "experience": {
-                "value": 3,
-                "correction": 0.1
-              },
-              "focus": {
-                "value": 1,
-                "correction": -0.2
-              }
-            },
-            {
-              "name": "Jira / Confluence",
-              "name_plotly": "Jira<br>Confluence",
-              "experience": {
-                "value": 3,
-                "correction": 0.1
-              },
-              "focus": {
-                "value": 1,
-                "correction": 0.2
-              }
-            },
-            {
-              "name": "Labour Psychology(diploma)",
-              "name_plotly": "Labour<br>Psychology<br>(diploma)",
-              "experience": {
-                "value": 2,
-                "correction": -0.2
-              },
-              "focus": {
-                "value": 2,
-                "correction": 0
-              }
-            },
-            {
-              "name": "Personality Types",
-              "experience": {
-                "value": 2,
-                "correction": 0
-              },
-              "focus": {
-                "value": 3,
-                "correction": 0
-              }
-            },
-            {
-              "name": "Servant Leadership",
-              "experience": {
-                "value": 3,
-                "correction": 0
-              },
-              "focus": {
-                "value": 3,
-                "correction": 0
-              }
-            }
-          ]
+          "id": "organisational"
         }
       ]
     },
     {
       "name": "Foreign Languages, Music, etc.",
-      "id": "languages",
+      "id": "various",
       "categories": [
         {
           "name": "Foreign Languages",
           "name_plotly": "Foreign<br>Languages",
-          "skills": [
-            {
-              "name": "Arabic",
-              "experience": {
-                "value": 1,
-                "correction": 0
-              },
-              "focus": {
-                "value": 1,
-                "correction": -0.2
-              }
-            },
-            {
-              "name": "Farsi",
-              "experience": {
-                "value": 1,
-                "correction": 0
-              },
-              "focus": {
-                "value": 1,
-                "correction": 0
-              }
-            },
-            {
-              "name": "Latin",
-              "experience": {
-                "value": 2,
-                "correction": 0.1
-              },
-              "focus": {
-                "value": 1,
-                "correction": -0.2
-              }
-            },
-            {
-              "name": "Italian",
-              "experience": {
-                "value": 2,
-                "correction": 0.1
-              },
-              "focus": {
-                "value": 1,
-                "correction": 0
-              }
-            },
-            {
-              "name": "French",
-              "experience": {
-                "value": 2,
-                "correction": 0.1
-              },
-              "focus": {
-                "value": 1,
-                "correction": 0.2
-              }
-            },
-            {
-              "name": "Spanish",
-              "experience": {
-                "value": 2,
-                "correction": 0
-              },
-              "focus": {
-                "value": 2,
-                "correction": 0
-              }
-            },
-            {
-              "name": "English",
-              "experience": {
-                "value": 3,
-                "correction": 0
-              },
-              "focus": {
-                "value": 3,
-                "correction": 0
-              }
-            }
-          ]
+          "id": "foreign"
         },
         {
           "name": "Music",
-          "skills": [
-            {
-              "name": "Choir Mastering",
-              "name_plotly": "Choir<br>Mastering",
-              "experience": {
-                "value": 2,
-                "correction": 0
-              },
-              "focus": {
-                "value": 1,
-                "correction": -0.2
-              }
-            },
-            {
-              "name": "Church Organ",
-              "name_plotly": "Church<br>Organ",
-              "experience": {
-                "value": 2,
-                "correction": 0
-              },
-              "focus": {
-                "value": 1,
-                "correction": 0
-              }
-            },
-            {
-              "name": "(E)-Guitar",
-              "experience": {
-                "value": 2,
-                "correction": 0
-              },
-              "focus": {
-                "value": 1,
-                "correction": 0.2
-              }
-            },
-            {
-              "name": "Piano",
-              "experience": {
-                "value": 3,
-                "correction": 0
-              },
-              "focus": {
-                "value": 1,
-                "correction": 0
-              }
-            },
-            {
-              "name": "Seaboard",
-              "experience": {
-                "value": 1,
-                "correction": 0
-              },
-              "focus": {
-                "value": 3,
-                "correction": 0
-              }
-            }
-          ]
+          "id": "music"
         },
         {
           "name": "Other",
-          "skills": [
-            {
-              "name": "Art",
-              "experience": {
-                "value": 1,
-                "correction": 0
-              },
-              "focus": {
-                "value": 1,
-                "correction": 0
-              }
-            },
-            {
-              "name": "Literature",
-              "experience": {
-                "value": 2,
-                "correction": 0
-              },
-              "focus": {
-                "value": 2,
-                "correction": -0.2
-              }
-            },
-            {
-              "name": "Science",
-              "experience": {
-                "value": 2,
-                "correction": 0
-              },
-              "focus": {
-                "value": 2,
-                "correction": 0
-              }
-            },
-            {
-              "name": "Politics",
-              "experience": {
-                "value": 2,
-                "correction": 0
-              },
-              "focus": {
-                "value": 3,
-                "correction": 0
-              }
-            }
-          ]
+          "id": "other"
         }
       ]
     }

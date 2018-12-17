@@ -51,22 +51,22 @@
                     <target>${java.version}</target>
                 </configuration>
             </plugin>
-            <plugin>
-                <groupId>org.jsonschema2pojo</groupId>
-                <artifactId>jsonschema2pojo-maven-plugin</artifactId>
-                <version>0.5.1</version>
-                <configuration>
-                    <sourceDirectory>${basedir}/src/main/resources/profile.schema.json</sourceDirectory>
-                    <targetPackage>de.allmaennitta.model.generated</targetPackage>
-                </configuration>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>generate</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
+            <!--<plugin>-->
+                <!--<groupId>org.jsonschema2pojo</groupId>-->
+                <!--<artifactId>jsonschema2pojo-maven-plugin</artifactId>-->
+                <!--<version>0.5.1</version>-->
+                <!--<configuration>-->
+                    <!--<sourceDirectory>${basedir}/src/main/resources/profile.schema.json</sourceDirectory>-->
+                    <!--<targetPackage>de.allmaennitta.model.generated</targetPackage>-->
+                <!--</configuration>-->
+                <!--<executions>-->
+                    <!--<execution>-->
+                        <!--<goals>-->
+                            <!--<goal>generate</goal>-->
+                        <!--</goals>-->
+                    <!--</execution>-->
+                <!--</executions>-->
+            <!--</plugin>-->
         </plugins>
     </build>
 
@@ -177,6 +177,13 @@
             <version>${cucumber.version}</version>
             <scope>test</scope>
         </dependency>
+
+        <!--//JSON-SCHEMA-GENERATION -->
+      <dependency>
+        <groupId>com.kjetland</groupId>
+        <artifactId>mbknor-jackson-jsonschema_2.10</artifactId>
+        <version>1.0.31</version>
+      </dependency>
 
         <!--//TOMCAT-->
         <dependency>

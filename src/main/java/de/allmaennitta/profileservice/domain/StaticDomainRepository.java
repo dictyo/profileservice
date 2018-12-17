@@ -1,9 +1,9 @@
 package de.allmaennitta.profileservice.domain;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import de.allmaennitta.model.generated.Domain;
+import de.allmaennitta.profileservice.model.Domain;
 
-import de.allmaennitta.model.generated.ProfileSchema;
+import de.allmaennitta.profileservice.model.ProfileSchema;
 import java.io.IOException;
 import java.util.Optional;
 import javax.annotation.PostConstruct;

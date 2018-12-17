@@ -1,0 +1,104 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "description": "MySkills",
+  "required": [
+    "domains"
+  ],
+  "definitions": {
+    "datapoint": {
+      "type": "object",
+      "required": [
+        "value"
+      ],
+      "properties": {
+        "value": {
+          "type": "integer",
+          "enum": [
+            1,
+            2,
+            3
+          ]
+        },
+        "correction": {
+          "type": [
+            "integer",
+            "number"
+          ],
+          "description": "Correction due to visual presentation in plotly."
+        }
+      }
+    }
+  },
+  "properties": {
+    "domains": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "description": "Domain: The broadest categorisation of skills.",
+        "required": [
+          "name",
+          "id",
+          "categories"
+        ],
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "id": {
+            "type": "string"
+          },
+          "categories": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "description": "Category: The finest categorisation of skills.",
+              "required": [
+                "name",
+                "skills"
+              ],
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "name_plotly": {
+                  "type": "string"
+                },
+                "skills": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "description": "Skill, the ability, coming from one's knowledge, practice,aptitude, etc. to do something well",
+                    "required": [
+                      "name",
+                      "focus",
+                      "experience"
+                    ],
+                    "properties": {
+                      "name": {
+                        "type": "string"
+                      },
+                      "name_plotly": {
+                        "type": "string"
+                      },
+                      "experience": {
+                        "type": "object",
+                        "description": "Experience: Ability to handle the subject passively(1), actively(2) or expertly(3)",
+                        "$ref": "#/definitions/datapoint"
+                      },
+                      "focus": {
+                        "type": "object",
+                        "description": "The Focus dimenstion measures, if I would like to use this ability rather not (1), very much(3) or if there is no prevalence(2).",
+                        "$ref": "#/definitions/datapoint"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

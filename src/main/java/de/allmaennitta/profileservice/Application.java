@@ -1,12 +1,20 @@
 package de.allmaennitta.profileservice;
 
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.kjetland.jackson.jsonSchema.JsonSchemaGenerator;
 import de.allmaennitta.profileservice.domain.DomainRepository;
 import de.allmaennitta.profileservice.domain.StaticDomainRepository;
+import de.allmaennitta.profileservice.model.ProfileSchema;
+import java.io.File;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration;
 import org.springframework.boot.devtools.autoconfigure.DevToolsDataSourceAutoConfiguration;
+import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -21,7 +29,6 @@ import org.springframework.context.annotation.Import;
   DataSourceAutoConfiguration.class})
 @Import({ModelConfiguration.class})
 public class Application {
-
   public static void main(String[] args) {
     SpringApplication.run(Application.class, args);
   }
@@ -30,6 +37,7 @@ public class Application {
   public DomainRepository domainRepository() {
     return new StaticDomainRepository();
   }
+
 
 //    @Bean
 //    public CommandLineRunner commandLineRunner(ApplicationContext ctx) {

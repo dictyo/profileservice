@@ -1,104 +1,119 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Profile Schema",
   "type": "object",
-  "description": "MySkills",
-  "required": [
-    "domains"
-  ],
-  "definitions": {
-    "datapoint": {
-      "type": "object",
-      "required": [
-        "value"
-      ],
-      "properties": {
-        "value": {
-          "type": "integer",
-          "enum": [
-            1,
-            2,
-            3
-          ]
-        },
-        "correction": {
-          "type": [
-            "integer",
-            "number"
-          ],
-          "description": "Correction due to visual presentation in plotly."
-        }
-      }
-    }
-  },
+  "additionalProperties": false,
   "properties": {
+    "skills": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/Skill"
+      },
+      "description": "Skill: the ability, based on one's knowledge, practice,aptitude, etc. to do something well"
+    },
     "domains": {
       "type": "array",
       "items": {
-        "type": "object",
-        "description": "Domain: The broadest categorisation of skills.",
-        "required": [
-          "name",
-          "id",
-          "categories"
-        ],
-        "properties": {
-          "name": {
-            "type": "string"
-          },
-          "id": {
-            "type": "string"
-          },
-          "categories": {
-            "type": "array",
-            "items": {
-              "type": "object",
-              "description": "Category: The finest categorisation of skills.",
-              "required": [
-                "name",
-                "skills"
-              ],
-              "properties": {
-                "name": {
-                  "type": "string"
-                },
-                "name_plotly": {
-                  "type": "string"
-                },
-                "skills": {
-                  "type": "array",
-                  "items": {
-                    "type": "object",
-                    "description": "Skill, the ability, coming from one's knowledge, practice,aptitude, etc. to do something well",
-                    "required": [
-                      "name",
-                      "focus",
-                      "experience"
-                    ],
-                    "properties": {
-                      "name": {
-                        "type": "string"
-                      },
-                      "name_plotly": {
-                        "type": "string"
-                      },
-                      "experience": {
-                        "type": "object",
-                        "description": "Experience: Ability to handle the subject passively(1), actively(2) or expertly(3)",
-                        "$ref": "#/definitions/datapoint"
-                      },
-                      "focus": {
-                        "type": "object",
-                        "description": "The Focus dimenstion measures, if I would like to use this ability rather not (1), very much(3) or if there is no prevalence(2).",
-                        "$ref": "#/definitions/datapoint"
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
+        "$ref": "#/definitions/Domain"
+      },
+      "description": "Domain: The broadest categorisation of skills."
+    }
+  },
+  "definitions": {
+    "Skill": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "name_plotly": {
+          "type": "string"
+        },
+        "domain": {
+          "type": "string"
+        },
+        "category": {
+          "type": "string"
+        },
+        "experience": {
+          "$ref": "#/definitions/Datapoint"
+        },
+        "focus": {
+          "$ref": "#/definitions/Datapoint"
         }
-      }
+      },
+      "required": [
+        "name",
+        "domain",
+        "category",
+        "experience",
+        "focus"
+      ]
+    },
+    "Datapoint": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "type": "string",
+          "enum": [
+            "1",
+            "2",
+            "3"
+          ]
+        },
+        "correction": {
+          "type": "integer",
+          "description": "Correction due to visual presentation in plotly."
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "Domain": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "categories": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Category"
+          },
+          "description": "Category: The finest categorisation of skills."
+        }
+      },
+      "required": [
+        "name",
+        "id"
+      ]
+    },
+    "Category": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "name_plotly": {
+          "type": "string",
+          "description": "name as used by plotly"
+        },
+        "id": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "id"
+      ]
     }
   }
 }
