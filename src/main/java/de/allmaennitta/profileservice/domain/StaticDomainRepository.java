@@ -42,7 +42,7 @@ public class StaticDomainRepository implements DomainRepository {
         .filter(d -> d.getId().equals(domainId))
         .findFirst()
         .orElseThrow(() ->
-            new WrongDomainIdException(String.format("There is no domain called '%s'", domainId)));
+            new NonExistentDomainIdException(String.format("There is no domain called '%s'", domainId)));
 
     return domain.getCategories().stream()
             .map(c -> {

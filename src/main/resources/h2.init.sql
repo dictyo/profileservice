@@ -1,0 +1,1 @@
+create table Skill (name varchar(255) not null, category varchar(255) not null, domain varchar(255) not null, namePlotly varchar(255), primary key (name))

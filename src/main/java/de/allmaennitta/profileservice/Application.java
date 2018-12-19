@@ -1,34 +1,39 @@
 package de.allmaennitta.profileservice;
 
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.kjetland.jackson.jsonSchema.JsonSchemaGenerator;
 import de.allmaennitta.profileservice.domain.DomainRepository;
 import de.allmaennitta.profileservice.domain.StaticDomainRepository;
-import de.allmaennitta.profileservice.model.ProfileSchema;
-import java.io.File;
+import de.allmaennitta.profileservice.skill.JpaSkillRepository;
+import javax.persistence.EntityManagerFactory;
+import javax.sql.DataSource;
+import org.hibernate.dialect.Oracle10gDialect;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
-import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
-import org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration;
-import org.springframework.boot.devtools.autoconfigure.DevToolsDataSourceAutoConfiguration;
-import org.springframework.context.ApplicationContext;
+import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.boot.jdbc.DataSourceBuilder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
+import org.springframework.context.annotation.Primary;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
+import org.springframework.jdbc.datasource.DriverManagerDataSource;
+import org.springframework.jdbc.datasource.embedded.EmbeddedDatabase;
+import org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseBuilder;
+import org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType;
+import org.springframework.orm.jpa.JpaDialect;
+import org.springframework.orm.jpa.JpaTransactionManager;
+import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
+import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
+import org.springframework.transaction.PlatformTransactionManager;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
 
-//@SpringBootApplication
 @Configuration
 @ComponentScan
-@EnableAutoConfiguration(exclude = {
-  DevToolsDataSourceAutoConfiguration.class,
-  HibernateJpaAutoConfiguration.class,
-  DataSourceAutoConfiguration.class})
+@EnableJpaRepositories("de.allmaennitta.profileservice")
+//@EnableTransactionManagement
 @Import({ModelConfiguration.class})
 public class Application {
+
   public static void main(String[] args) {
     SpringApplication.run(Application.class, args);
   }
@@ -37,6 +42,34 @@ public class Application {
   public DomainRepository domainRepository() {
     return new StaticDomainRepository();
   }
+
+//  @Bean
+//  @Primary
+//  @ConfigurationProperties(prefix = "spring.datasource")
+//  public DataSource dataSource() {
+//    return DataSourceBuilder.create().build();
+//  }
+
+//  @Bean
+//  @Primary
+//  public PlatformTransactionManager transactionManager(EntityManagerFactory entityManagerFactory) {
+//    JpaTransactionManager txManager = new JpaTransactionManager();
+//    txManager.setEntityManagerFactory(entityManagerFactory);
+//    return txManager;
+//  }
+//
+//  @Bean
+//  public LocalContainerEntityManagerFactoryBean entityManagerFactory() {
+//    HibernateJpaVendorAdapter vendorAdapter = new HibernateJpaVendorAdapter();
+//    vendorAdapter.setGenerateDdl(true);
+//    vendorAdapter.setShowSql(true);
+//    vendorAdapter.setDatabasePlatform("org.hibernate.dialect.H2Dialect");
+//    LocalContainerEntityManagerFactoryBean factory = new LocalContainerEntityManagerFactoryBean();
+//    factory.setJpaVendorAdapter(vendorAdapter);
+//    factory.setPackagesToScan("de.allmaennitta.profileservice.model");
+//    factory.setDataSource(dataSource());
+//    return factory;
+//  }
 
 
 //    @Bean

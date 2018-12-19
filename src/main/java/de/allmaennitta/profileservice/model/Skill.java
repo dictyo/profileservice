@@ -9,11 +9,14 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Transient;
 import javax.validation.constraints.NotNull;
 import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.apache.commons.lang.builder.ToStringBuilder;
-
+@Entity
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
     "name",
@@ -24,6 +27,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "focus"
 })
 public class Skill {
+    @Id
     @NotNull
     @JsonProperty("name")
     private String name;
@@ -39,10 +43,12 @@ public class Skill {
     @JsonProperty("category")
     private String category;
 
+    @Transient
     @NotNull
     @JsonProperty("experience")
     private Datapoint experience;
 
+    @Transient
     @NotNull
     @JsonProperty("focus")
     private Datapoint focus;
