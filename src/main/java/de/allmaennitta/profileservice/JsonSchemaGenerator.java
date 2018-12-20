@@ -7,7 +7,6 @@ import java.io.File;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.WebApplicationType;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration;
@@ -27,7 +26,7 @@ public class JsonSchemaGenerator {
 
   public static void main(String[] args) {
     SpringApplication application = new SpringApplication(Application.class);
-    application.setWebApplicationType(WebApplicationType.NONE);
+    application.setWebEnvironment(false);
     application.run(args);
   }
 

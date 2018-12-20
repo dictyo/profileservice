@@ -40,12 +40,10 @@ public class Skill {
     private String category;
 
     @Transient
-    @NotNull
     @JsonProperty("experience")
     private Datapoint experience;
 
     @Transient
-    @NotNull
     @JsonProperty("focus")
     private Datapoint focus;
 
