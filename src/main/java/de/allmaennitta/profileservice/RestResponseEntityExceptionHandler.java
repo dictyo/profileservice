@@ -1,6 +1,6 @@
 package de.allmaennitta.profileservice;
 
-import de.allmaennitta.profileservice.domain.WrongDomainIdException;
+import de.allmaennitta.profileservice.skill.InvalidSkillException;
 import java.util.Collections;
 import java.util.Map;
 import org.springframework.http.HttpHeaders;
@@ -15,11 +15,18 @@ import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExcep
 public class RestResponseEntityExceptionHandler
     extends ResponseEntityExceptionHandler {
 
-  @ExceptionHandler(value = { WrongDomainIdException.class })
-  protected ResponseEntity<Object> handleConflict(
+  @ExceptionHandler(value = { EntityNotFoundException.class})
+  protected ResponseEntity<Object> handleWrongDomain(
       RuntimeException ex, WebRequest request) {
     Map bodyOfResponse = Collections.singletonMap("code",ex.getMessage());
     return handleExceptionInternal(ex, bodyOfResponse,
         new HttpHeaders(), HttpStatus.NOT_FOUND, request);
+  }
+  @ExceptionHandler(value = { InvalidSkillException.class })
+  protected ResponseEntity<Object> handleSkillError(
+      RuntimeException ex, WebRequest request) {
+    Map bodyOfResponse = Collections.singletonMap("code",ex.getMessage());
+    return handleExceptionInternal(ex, bodyOfResponse,
+        new HttpHeaders(), HttpStatus.BAD_REQUEST, request);
   }
 }

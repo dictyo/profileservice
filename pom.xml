@@ -28,6 +28,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>1.8</java.version>
         <cucumber.version>1.2.5</cucumber.version>
+        <eclipselink.version>2.7.1</eclipselink.version>
         <start-class>de.allmaennitta.profileservice.Application</start-class>
     </properties>
 
@@ -35,6 +36,16 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
+          <!--<exclusions>-->
+            <!--<exclusion>-->
+              <!--<groupId>org.hibernate</groupId>-->
+              <!--<artifactId>hibernate-entitymanager</artifactId>-->
+            <!--</exclusion>-->
+            <!--<exclusion>-->
+              <!--<groupId>org.hibernate</groupId>-->
+              <!--<artifactId>hibernate-core</artifactId>-->
+            <!--</exclusion>-->
+          <!--</exclusions>-->
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -59,9 +70,20 @@
         <!--<artifactId>spring-restdocs-mockmvc</artifactId>-->
         <!--<scope>test</scope>-->
         <!--</dependency>-->
+      <!--<dependency>-->
+        <!--<groupId>org.eclipse.persistence</groupId>-->
+        <!--<artifactId>org.eclipse.persistence.jpa.modelgen.processor</artifactId>-->
+        <!--<version>${eclipselink.version}</version>-->
+      <!--</dependency>-->
+      <!--<dependency>-->
+        <!--<groupId>org.eclipse.persistence</groupId>-->
+        <!--<artifactId>org.eclipse.persistence.oracle</artifactId>-->
+        <!--<version>${eclipselink.version}</version>-->
+      <!--</dependency>-->
         <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
+            <scope>runtime</scope>
         </dependency>
 
         <dependency>
@@ -162,7 +184,19 @@
                     <mainClass>${start-class}</mainClass>
                 </configuration>
             </plugin>
-
+          <!--<plugin>-->
+            <!--<groupId>com.ethlo.persistence.tools</groupId>-->
+            <!--<artifactId>eclipselink-maven-plugin</artifactId>-->
+            <!--<version>2.7.1.1</version>-->
+            <!--<executions>-->
+              <!--<execution>-->
+                <!--<phase>process-classes</phase>-->
+                <!--<goals>-->
+                  <!--<goal>weave</goal>-->
+                <!--</goals>-->
+              <!--</execution>-->
+            <!--</executions>-->
+          <!--</plugin>-->
         </plugins>
     </build>
 

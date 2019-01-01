@@ -1,4 +1,4 @@
-package de.allmaennitta.profileservice;
+package de.allmaennitta.profileservice.configuration;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;

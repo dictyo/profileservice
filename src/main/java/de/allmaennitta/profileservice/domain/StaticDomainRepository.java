@@ -1,6 +1,7 @@
 package de.allmaennitta.profileservice.domain;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import de.allmaennitta.profileservice.EntityNotFoundException;
 import de.allmaennitta.profileservice.model.Category;
 import de.allmaennitta.profileservice.model.Domain;
 
@@ -42,7 +43,7 @@ public class StaticDomainRepository implements DomainRepository {
         .filter(d -> d.getId().equals(domainId))
         .findFirst()
         .orElseThrow(() ->
-            new WrongDomainIdException(String.format("There is no domain called '%s'", domainId)));
+            new EntityNotFoundException(String.format("There is no domain called '%s'", domainId)));
 
     return domain.getCategories().stream()
             .map(c -> {

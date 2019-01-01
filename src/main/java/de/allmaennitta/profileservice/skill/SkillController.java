@@ -1,16 +1,26 @@
 package de.allmaennitta.profileservice.skill;
 
+import de.allmaennitta.profileservice.EntityNotFoundException;
+import de.allmaennitta.profileservice.model.Category;
 import de.allmaennitta.profileservice.model.Skill;
+import java.util.Collections;
+import java.util.List;
+import java.util.Map;
 import java.util.Optional;
 import javax.validation.Valid;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.http.MediaType;
 import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -22,17 +32,23 @@ public class SkillController {
   JpaSkillRepository skillRepository;
 
   @GetMapping(value = "/{name}")
-  public Optional<Skill> byName(@PathVariable("name") String name) {
-    return skillRepository.findById(name);
+  public Skill byName(@PathVariable("name") String name) {
+    return skillRepository.findById(name).orElseThrow(
+        ()->new EntityNotFoundException(String.format("Skill '%s' could not be found.",name)));
   }
 
-  @PostMapping
-  public Skill create(@Valid Skill skill, BindingResult bindingResult) {
-    if (bindingResult.hasErrors()) { throw new InvalidSkillException(bindingResult);}
-
+  @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
+  public Skill create(@RequestBody Skill skill) {
+//    if (bindingResult.hasErrors()) { throw new InvalidSkillException(bindingResult);}
     return skillRepository.save(skill);
   }
+
+  @DeleteMapping(consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
+  public void delete(@RequestBody Skill skill) {
+    skillRepository.delete(skill);
+  }
 }
+
 //
 //    @GetMapping
 //    def list(model: Model) = {

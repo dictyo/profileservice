@@ -2,14 +2,17 @@ package de.allmaennitta.profileservice;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import de.allmaennitta.profileservice.configuration.ModelConfiguration;
 import de.allmaennitta.profileservice.model.ProfileSchema;
 import java.io.File;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.WebApplicationType;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration;
+import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
@@ -25,9 +28,9 @@ public class JsonSchemaGenerator {
   ObjectMapper objectMapper;
 
   public static void main(String[] args) {
-    SpringApplication application = new SpringApplication(Application.class);
-    application.setWebEnvironment(false);
-    application.run(args);
+    new SpringApplicationBuilder(Application.class)
+        .web(WebApplicationType.NONE) // .REACTIVE, .SERVLET
+        .run(args);
   }
 
   //@Bean
