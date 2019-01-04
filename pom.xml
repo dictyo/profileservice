@@ -8,24 +8,18 @@
     <version>0.9-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>profileservice</name>
+  <name>profile-service</name>
     <url>http://allmaennitta.de</url>
 
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>io.spring.platform</groupId>
-                <artifactId>platform-bom</artifactId>
-                <version>Cairo-RELEASE</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
+  <parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>2.0.4.RELEASE</version>
+    <relativePath/>
+  </parent>
 
 
     <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>1.8</java.version>
         <cucumber.version>1.2.5</cucumber.version>
         <eclipselink.version>2.7.1</eclipselink.version>
@@ -35,21 +29,11 @@
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-jpa</artifactId>
-          <!--<exclusions>-->
-            <!--<exclusion>-->
-              <!--<groupId>org.hibernate</groupId>-->
-              <!--<artifactId>hibernate-entitymanager</artifactId>-->
-            <!--</exclusion>-->
-            <!--<exclusion>-->
-              <!--<groupId>org.hibernate</groupId>-->
-              <!--<artifactId>hibernate-core</artifactId>-->
-            <!--</exclusion>-->
-          <!--</exclusions>-->
+      <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
+      <artifactId>spring-boot-starter-data-jpa</artifactId>
         </dependency>
 
         <!--<dependency>-->
@@ -62,13 +46,43 @@
         <!--<artifactId>spring-boot-starter-security</artifactId>-->
         <!--</dependency>-->
         <!--<dependency>-->
+
+    <!--</dependency>-->
+    <!--<groupId>org.springframework.retry</groupId>-->
+    <!--<artifactId>spring-retry</artifactId>-->
+    <!--</dependency>-->
+
+    <!--<dependency>-->
         <!--<groupId>org.springframework.boot</groupId>-->
         <!--<artifactId>spring-boot-starter-hateoas</artifactId>-->
         <!--</dependency>-->
         <!--<dependency>-->
-        <!--<groupId>org.springframework.restdocs</groupId>-->
-        <!--<artifactId>spring-restdocs-mockmvc</artifactId>-->
-        <!--<scope>test</scope>-->
+    <!--<groupId>org.springframework.data</groupId>-->
+    <!--<artifactId>spring-data-rest-hal-browser</artifactId>-->
+    <!--</dependency>-->
+    <!--<dependency>-->
+
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-actuator</artifactId>
+    </dependency>
+    <!--<dependency>-->
+    <!--<groupId>org.springframework.boot</groupId>-->
+    <!--<artifactId>spring-boot-starter-aop</artifactId>-->
+    <!--</dependency>-->
+
+
+
+    <dependency>
+      <groupId>org.springframework.cloud</groupId>
+      <artifactId>spring-cloud-starter-sleuth</artifactId>
+      <version>2.0.1.RELEASE</version>
+    </dependency>
+
+    <!--// DATA / DATABASE -->
+    <!--<dependency>-->
+    <!--<groupId>org.flywaydb</groupId>-->
+    <!--<artifactId>flyway-core</artifactId>-->
         <!--</dependency>-->
       <!--<dependency>-->
         <!--<groupId>org.eclipse.persistence</groupId>-->
@@ -85,12 +99,38 @@
             <artifactId>h2</artifactId>
             <scope>runtime</scope>
         </dependency>
+    <!--<dependency>-->
+    <!--<groupId>org.springframework.boot</groupId>-->
+    <!--<artifactId>spring-boot-starter-cache</artifactId>-->
+    <!--</dependency>-->
 
+    <!--//TOOLS / UTILS -->
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <optional>true</optional>
+    </dependency>
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
             <version>3.8.1</version>
         </dependency>
+    <dependency>
+      <groupId>com.kjetland</groupId>
+      <artifactId>mbknor-jackson-jsonschema_2.10</artifactId>
+      <version>1.0.31</version>
+    </dependency>
+    <dependency>
+      <groupId>com.fasterxml.jackson.datatype</groupId>
+      <artifactId>jackson-datatype-jdk8</artifactId>
+      <!--<version>2.9.7</version>-->
+    </dependency>
+    <dependency>
+      <groupId>com.fasterxml.jackson.datatype</groupId>
+      <artifactId>jackson-datatype-jsr310</artifactId>
+      <!--<version>2.9.7</version>-->
+    </dependency>
+
 
         <!--//TESTING-->
         <dependency>
@@ -106,9 +146,9 @@
             <!--<scope>test</scope>-->
         <!--</dependency>-->
         <dependency>
-            <groupId>io.rest-assured</groupId>
-            <artifactId>rest-assured</artifactId>
-            <!--<version>LATEST</version>-->
+      <groupId>org.springframework.restdocs</groupId>
+      <artifactId>spring-restdocs-mockmvc</artifactId>
+      <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>info.cukes</groupId>
@@ -129,23 +169,6 @@
             <scope>test</scope>
         </dependency>
 
-        <!--//JSON-SCHEMA-GENERATION -->
-        <dependency>
-            <groupId>com.kjetland</groupId>
-            <artifactId>mbknor-jackson-jsonschema_2.10</artifactId>
-            <version>1.0.31</version>
-        </dependency>
-      <dependency>
-        <groupId>com.fasterxml.jackson.datatype</groupId>
-        <artifactId>jackson-datatype-jdk8</artifactId>
-        <!--<version>2.9.7</version>-->
-      </dependency>
-      <dependency>
-        <groupId>com.fasterxml.jackson.datatype</groupId>
-        <artifactId>jackson-datatype-jsr310</artifactId>
-        <!--<version>2.9.7</version>-->
-      </dependency>
-
     </dependencies>
 
     <build>
@@ -157,15 +180,6 @@
             </resource>
         </resources>
         <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.7.0</version>
-                <configuration>
-                    <source>${java.version}</source>
-                    <target>${java.version}</target>
-                </configuration>
-            </plugin>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
@@ -184,6 +198,31 @@
                     <mainClass>${start-class}</mainClass>
                 </configuration>
             </plugin>
+      <plugin>
+        <groupId>org.asciidoctor</groupId>
+        <artifactId>asciidoctor-maven-plugin</artifactId>
+        <version>1.5.3</version>
+        <executions>
+          <execution>
+            <id>generate-docs</id>
+            <phase>prepare-package</phase>
+            <goals>
+              <goal>process-asciidoc</goal>
+            </goals>
+            <configuration>
+              <backend>html</backend>
+              <doctype>book</doctype>
+            </configuration>
+          </execution>
+        </executions>
+        <dependencies>
+          <dependency>
+            <groupId>org.springframework.restdocs</groupId>
+            <artifactId>spring-restdocs-asciidoctor</artifactId>
+            <version>2.0.3.RELEASE</version>
+          </dependency>
+        </dependencies>
+      </plugin>
           <!--<plugin>-->
             <!--<groupId>com.ethlo.persistence.tools</groupId>-->
             <!--<artifactId>eclipselink-maven-plugin</artifactId>-->
@@ -200,90 +239,9 @@
         </plugins>
     </build>
 
-    <!--<parent>-->
-    <!--<groupId>io.spring.platform</groupId>-->
-    <!--<artifactId>platform-bom</artifactId>-->
-    <!--<version>Cairo-SR5</version>-->
-    <!--<relativePath/>-->
-    <!--</parent>-->
-
-    <!--<plugin>-->
-    <!--<groupId>org.jsonschema2pojo</groupId>-->
-    <!--<artifactId>jsonschema2pojo-maven-plugin</artifactId>-->
-    <!--<version>0.5.1</version>-->
-    <!--<configuration>-->
-    <!--<sourceDirectory>${basedir}/src/main/resources/profile.schema.json</sourceDirectory>-->
-    <!--<targetPackage>de.allmaennitta.model.generated</targetPackage>-->
-    <!--</configuration>-->
-    <!--<executions>-->
-    <!--<execution>-->
-    <!--<goals>-->
-    <!--<goal>generate</goal>-->
-    <!--</goals>-->
-    <!--</execution>-->
-    <!--</executions>-->
-    <!--</plugin>-->
-
-    <!--//TOMCAT-->
-    <!--<dependency>-->
-    <!--<groupId>org.springframework.boot</groupId>-->
-    <!--<artifactId>spring-boot-starter-tomcat</artifactId>-->
-    <!--&lt;!&ndash;<version>${springboot.version}</version>&ndash;&gt;-->
-    <!--</dependency>-->
-
-    <!--<dependency>-->
-    <!--<groupId>org.hsqldb</groupId>-->
-    <!--<artifactId>hsqldb</artifactId>-->
-    <!--&lt;!&ndash;<version>2.3.1</version>&ndash;&gt;-->
-    <!--</dependency>-->
     <!--<dependency>-->
     <!--<groupId>org.springframework.data</groupId>-->
     <!--<artifactId>spring-data-neo4j</artifactId>-->
     <!--&lt;!&ndash;<version>${neo4j.version}</version>&ndash;&gt;-->
     <!--</dependency>-->
-
-    <!--<dependency>-->
-    <!--<groupId>org.hibernate</groupId>-->
-    <!--<artifactId>hibernate-validator</artifactId>-->
-    <!--&lt;!&ndash;<version>5.3.5.Final</version>&ndash;&gt;-->
-    <!--</dependency>-->
-
-    <!-- Legacy version to build model pojos -->
-    <!--<dependency>-->
-    <!--<groupId>commons-lang</groupId>-->
-    <!--<artifactId>commons-lang</artifactId>-->
-    <!--<version>2.6</version>-->
-    <!--</dependency>-->
-    <!--<dependency>-->
-    <!--<groupId>javax.servlet</groupId>-->
-    <!--<artifactId>javax.servlet-api</artifactId>-->
-    <!--<scope>provided</scope>-->
-    <!--</dependency>-->
-
-    <!--<dependency>-->
-    <!--<groupId>ch.qos.logback</groupId>-->
-    <!--<artifactId>logback-classic</artifactId>-->
-    <!--</dependency>-->
-
-    <!--&lt;!&ndash;//JACKSON&ndash;&gt;-->
-    <!--<dependency>-->
-    <!--<groupId>com.fasterxml.jackson.core</groupId>-->
-    <!--<artifactId>jackson-core</artifactId>-->
-    <!--&lt;!&ndash;<version>${jackson.version}</version>&ndash;&gt;-->
-    <!--</dependency>-->
-    <!--<dependency>-->
-    <!--<groupId>com.fasterxml.jackson.core</groupId>-->
-    <!--<artifactId>jackson-annotations</artifactId>-->
-    <!--&lt;!&ndash;<version>${jackson.version}</version>&ndash;&gt;-->
-    <!--</dependency>-->
-    <!--<dependency>-->
-    <!--<groupId>com.fasterxml.jackson.core</groupId>-->
-    <!--<artifactId>jackson-databind</artifactId>-->
-    <!--&lt;!&ndash;<version>${jackson.version}</version>&ndash;&gt;-->
-    <!--</dependency>-->
-    <!--<dependency>-->
-    <!--<groupId>org.springframework.boot</groupId>-->
-    <!--<artifactId>spring-boot</artifactId>-->
-    <!--</dependency>-->
-
 </project>
