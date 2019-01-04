@@ -1,10 +1,30 @@
 <!--suppress XmlUnboundNsPrefix, XmlUnboundNsPrefix -->
-<configuration debug="true">
-  <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
-    <encoder>
-      <pattern>%d{HH:mm:ss.SSS} TKD [%thread] %-5level %logger{36} - %msg%n</pattern>
-    </encoder>
-  </appender>
+<configuration debug="false">
+  <include resource="org/springframework/boot/logging/logback/defaults.xml" />
+  <!--<property name="LOG_FILE" value="${LOG_FILE:-${LOG_PATH:-${LOG_TEMP:-${java.io.tmpdir:-/tmp}}}/spring.log}"/>-->
+  <include resource="org/springframework/boot/logging/logback/console-appender.xml" />
+  <!--<include resource="org/springframework/boot/logging/logback/file-appender.xml" />-->
+
+  <logger name="de.allmaennitta.profileservice" level="DEBUG" additivity="false">
+    <appender-ref ref="CONSOLE"/>
+  </logger>
+
+
+  <root level="INFO">
+    <appender-ref ref="CONSOLE"/>
+    <!--<appender-ref ref="FILE" />-->
+  </root>
+
+  <!--<logger name="org.hibernate" level="DEBUG" additivity="false">-->
+  <!--<appender-ref ref="CONSOLE"/>-->
+  <!--</logger>-->
+
+  <!--<appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">-->
+  <!--<encoder>-->
+  <!--<pattern>%clr(%d{yyyy-MM-dd HH:mm:ss.SSS}){faint} %clr(${LOG_LEVEL_PATTERN:-%5p}) %clr(${PID:- }){magenta} %clr(-&#45;&#45;){faint} %clr([%15.15t]){faint} %clr(%-40.40logger{39}){cyan} %clr(:){faint} %m%n${LOG_EXCEPTION_CONVERSION_WORD:-%wEx}</pattern>-->
+  <!--&lt;!&ndash;<pattern>%d{HH:mm:ss.SSS} TKD [%thread] %-5level %logger - %msg%n</pattern>&ndash;&gt;-->
+  <!--</encoder>-->
+  <!--</appender>-->
 
   <!--<appender name="FILE" class="ch.qos.logback.core.FileAppender">-->
   <!--<file>/tmp/test.log</file>-->
@@ -13,16 +33,5 @@
   <!--<pattern>%d{HH:mm:ss.SSS} TKD [%thread] %-5level %logger{36} - %msg%n</pattern>-->
   <!--</encoder>-->
   <!--</appender>-->
-  <logger name="de.allmaennitta.profileservice" level="DEBUG" additivity="false">
-    <appender-ref ref="STDOUT"/>
-  </logger>
 
-  <logger name="org.hibernate" level="DEBUG" additivity="false">
-    <appender-ref ref="STDOUT"/>
-  </logger>
-
-  <root level="INFO">
-    <appender-ref ref="STDOUT"/>
-    <!--<appender-ref ref="FILE" />-->
-  </root>
 </configuration>
