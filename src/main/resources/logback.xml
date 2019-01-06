@@ -9,29 +9,14 @@
     <appender-ref ref="CONSOLE"/>
   </logger>
 
+  <logger name="com.fasterxml.jackson.databind" level="DEBUG" additivity="false">
+  <appender-ref ref="CONSOLE"/>
+  </logger>
 
   <root level="INFO">
     <appender-ref ref="CONSOLE"/>
     <!--<appender-ref ref="FILE" />-->
   </root>
 
-  <!--<logger name="org.hibernate" level="DEBUG" additivity="false">-->
-  <!--<appender-ref ref="CONSOLE"/>-->
-  <!--</logger>-->
-
-  <!--<appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">-->
-  <!--<encoder>-->
-  <!--<pattern>%clr(%d{yyyy-MM-dd HH:mm:ss.SSS}){faint} %clr(${LOG_LEVEL_PATTERN:-%5p}) %clr(${PID:- }){magenta} %clr(-&#45;&#45;){faint} %clr([%15.15t]){faint} %clr(%-40.40logger{39}){cyan} %clr(:){faint} %m%n${LOG_EXCEPTION_CONVERSION_WORD:-%wEx}</pattern>-->
-  <!--&lt;!&ndash;<pattern>%d{HH:mm:ss.SSS} TKD [%thread] %-5level %logger - %msg%n</pattern>&ndash;&gt;-->
-  <!--</encoder>-->
-  <!--</appender>-->
-
-  <!--<appender name="FILE" class="ch.qos.logback.core.FileAppender">-->
-  <!--<file>/tmp/test.log</file>-->
-  <!--<append>true</append>-->
-  <!--<encoder>-->
-  <!--<pattern>%d{HH:mm:ss.SSS} TKD [%thread] %-5level %logger{36} - %msg%n</pattern>-->
-  <!--</encoder>-->
-  <!--</appender>-->
 
 </configuration>

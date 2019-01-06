@@ -7,6 +7,8 @@ import de.allmaennitta.profileservice.Application;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.test.context.SpringBootTest.WebEnvironment;
+import org.springframework.boot.web.server.LocalServerPort;
 import org.springframework.http.MediaType;
 import org.springframework.http.client.ClientHttpResponse;
 import org.springframework.test.context.ContextConfiguration;
@@ -18,7 +20,7 @@ import java.io.IOException;
 
 @SpringBootTest(
   classes = Application.class,
-  webEnvironment = SpringBootTest.WebEnvironment.MOCK)
+  webEnvironment = WebEnvironment.MOCK)
 @ContextConfiguration
 @AutoConfigureMockMvc
 public class SpringIntegrationTest {

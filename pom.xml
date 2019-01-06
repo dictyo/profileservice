@@ -85,13 +85,13 @@
     <!--<artifactId>flyway-core</artifactId>-->
         <!--</dependency>-->
       <!--<dependency>-->
-        <!--<groupId>org.eclipse.persistence</groupId>-->
-        <!--<artifactId>org.eclipse.persistence.jpa.modelgen.processor</artifactId>-->
+        <!--<groupId>org.eclipse.serialisation</groupId>-->
+        <!--<artifactId>org.eclipse.serialisation.jpa.modelgen.processor</artifactId>-->
         <!--<version>${eclipselink.version}</version>-->
       <!--</dependency>-->
       <!--<dependency>-->
-        <!--<groupId>org.eclipse.persistence</groupId>-->
-        <!--<artifactId>org.eclipse.persistence.oracle</artifactId>-->
+        <!--<groupId>org.eclipse.serialisation</groupId>-->
+        <!--<artifactId>org.eclipse.serialisation.oracle</artifactId>-->
         <!--<version>${eclipselink.version}</version>-->
       <!--</dependency>-->
         <dependency>
@@ -224,7 +224,7 @@
         </dependencies>
       </plugin>
           <!--<plugin>-->
-            <!--<groupId>com.ethlo.persistence.tools</groupId>-->
+            <!--<groupId>com.ethlo.serialisation.tools</groupId>-->
             <!--<artifactId>eclipselink-maven-plugin</artifactId>-->
             <!--<version>2.7.1.1</version>-->
             <!--<executions>-->

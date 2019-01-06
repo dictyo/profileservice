@@ -21,7 +21,6 @@ import org.springframework.test.web.servlet.MockMvc;
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes={Application.class}, webEnvironment = WebEnvironment.MOCK)
 @AutoConfigureMockMvc
-//@ContextConfiguration(classes={ModelConfiguration.class})
 public class ProfileControllerTests {
 
   @Autowired

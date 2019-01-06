@@ -1,0 +1,15 @@
+{
+  "name": "x",
+  "domain": "y",
+  "category": "z",
+  "experience": {
+    "value": 2,
+    "correction": 0.3,
+    "id": 0
+  },
+  "focus": {
+    "value": 3,
+    "correction": -0.3,
+    "id": 0
+  }
+}

@@ -10,105 +10,60 @@ import com.fasterxml.jackson.annotation.JsonValue;
 
 import java.util.HashMap;
 import java.util.Map;
+import javax.persistence.DiscriminatorColumn;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Inheritance;
+import javax.persistence.OneToOne;
+import javax.persistence.Table;
+import javax.persistence.criteria.CriteriaBuilder.In;
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 
+import lombok.AccessLevel;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
 import org.apache.commons.lang3.builder.EqualsBuilder;
+import org.apache.commons.lang3.builder.EqualsExclude;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 
-@JsonInclude(JsonInclude.Include.NON_NULL)
-@JsonPropertyOrder({
-    "value",
-    "correction"
-})
+@Entity
+@Inheritance
+@DiscriminatorColumn(name="DATAPOINT_TYPE")
+@Table(name="DATAPOINT")
+
+@Data
 public class Datapoint {
-  @NotNull
-  @JsonProperty("value")
-  private Datapoint.Value value;
 
-  @JsonProperty("correction")
-  @JsonPropertyDescription("Correction due to visual presentation in plotly.")
-  private Integer correction;
+//  protected Datapoint (@NotNull @Min(1) @Max(3)Integer value, Double correction){
+//    this.value = value;
+//    this.correction = correction;
+//  }
 
+//  protected Datapoint (@NotNull @Min(1) @Max(3)Integer value){
+//    this(value, 0d);
+//  }
 
-  @JsonProperty("value")
-  public Datapoint.Value getValue() {
-    return value;
-  }
+  @Id @GeneratedValue(strategy = GenerationType.AUTO)
+  @JsonProperty
+  @EqualsAndHashCode.Exclude
+  private long id;
 
-  @JsonProperty("value")
-  public Datapoint setValue(Datapoint.Value value) {
-    this.value = value;
-    return this;
-  }
+  @NotNull @Min(1) @Max(3)
+  @JsonProperty
+  private Integer value;
 
-  @JsonProperty("correction")
-  public Integer getCorrection() {
-    return correction;
-  }
-
-  @JsonProperty("correction")
-  public Datapoint setCorrection(Integer correction) {
-    this.correction = correction;
-    this.value = value;
-    return this;
-  }
-
-  @Override
-  public String toString() {
-    return new ToStringBuilder(this).append("value", value).append("correction", correction).toString();
-  }
-
-  @Override
-  public int hashCode() {
-    return new HashCodeBuilder().append(correction).append(value).toHashCode();
-  }
-
-  @Override
-  public boolean equals(Object other) {
-    if (other == this) {
-      return true;
-    }
-    if ((other instanceof Datapoint) == false) {
-      return false;
-    }
-    Datapoint rhs = ((Datapoint) other);
-    return new EqualsBuilder().append(correction, rhs.correction).append(value, rhs.value).isEquals();
-  }
-
-  public enum Value {
-
-    _1(1),
-    _2(2),
-    _3(3);
-    private final Integer value;
-    private final static Map<Integer, Datapoint.Value> CONSTANTS = new HashMap<Integer, Datapoint.Value>();
-
-    static {
-      for (Datapoint.Value c : values()) {
-        CONSTANTS.put(c.value, c);
-      }
-    }
-
-    private Value(Integer value) {
-      this.value = value;
-    }
-
-    @JsonValue
-    public Integer value() {
-      return this.value;
-    }
-
-    @JsonCreator
-    public static Datapoint.Value fromValue(Integer value) {
-      Datapoint.Value constant = CONSTANTS.get(value);
-      if (constant == null) {
-        throw new IllegalArgumentException((value + ""));
-      } else {
-        return constant;
-      }
-    }
-
-  }
+  @JsonProperty
+  @JsonPropertyDescription("Correction due to visual presentation in plotly. ")
+  private Double correction;
 
 }

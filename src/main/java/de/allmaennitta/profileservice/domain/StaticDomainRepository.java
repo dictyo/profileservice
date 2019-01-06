@@ -32,7 +32,7 @@ public class StaticDomainRepository implements DomainRepository {
           ProfileSchema.class);
     } catch (IOException e) {
       throw new IllegalStateException("Something wrong with the profile.json file in "
-          + "resources-folder.");
+          + "resources-folder.",e);
     }
   }
 

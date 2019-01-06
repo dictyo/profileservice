@@ -1,6 +1,7 @@
 package de.allmaennitta.profileservice;
 
 import de.allmaennitta.profileservice.configuration.ModelConfiguration;
+
 import de.allmaennitta.profileservice.domain.DomainRepository;
 import de.allmaennitta.profileservice.domain.StaticDomainRepository;
 import de.allmaennitta.profileservice.model.Datapoint;
@@ -43,11 +44,12 @@ public class Application {
         ((DataSource) ctx.getBean(DataSource.class)).getConnection().getMetaData().getURL());
   }
 
+
   @Bean
   public DomainRepository domainRepository() {
     return new StaticDomainRepository();
   }
-  }
+}
 
 //    @Bean
 //    public CommandLineRunner commandLineRunner(ApplicationContext ctx) {

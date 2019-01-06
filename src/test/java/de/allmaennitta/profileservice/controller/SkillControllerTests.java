@@ -9,6 +9,14 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 import de.allmaennitta.profileservice.Application;
+import java.io.InputStream;
+import java.net.URI;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+import lombok.extern.slf4j.Slf4j;
 import org.hamcrest.core.StringContains;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -23,7 +31,7 @@ import org.springframework.test.web.servlet.MockMvc;
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes={Application.class}, webEnvironment = WebEnvironment.MOCK)
 @AutoConfigureMockMvc
-//@ContextConfiguration(classes={ModelConfiguration.class})
+@Slf4j
 public class SkillControllerTests {
 
   @Autowired
@@ -31,21 +39,25 @@ public class SkillControllerTests {
 
   @Test
   public void testGetPostDeleteSkill() throws Exception {
-    String name = "n";
-    String skill1="{\"name\":\""+name+"\",\"name_plotly\":\"np\",\"domain\":\"d\","
-        + "\"category\":\"c\"}";
+    URI uri = getClass().getResource("skill.json").toURI();
+    log.info("JSON-PATH: "+uri.toString());
+    Path path = Paths.get(uri);
+    Stream<String> lines = Files.lines(path);
+    String skill = lines.collect(Collectors.joining("\n"));
+    lines.close();
+
 
     this.mockMvc.perform(
         post("/skills")
           .contentType(MediaType.APPLICATION_JSON)
-          .content(skill1)
+          .content(skill)
           .accept(MediaType.APPLICATION_JSON))
         .andExpect(status().is2xxSuccessful())
         .andDo(print())
         .andExpect(jsonPath("$.name").value("n"))
         .andExpect(jsonPath("$.domain").value("d"));
 
-    this.mockMvc.perform(get("/skills/"+name)
+    this.mockMvc.perform(get("/skills/n")
         .accept(MediaType.APPLICATION_JSON))
         .andExpect(status().is2xxSuccessful())
         .andDo(print())
@@ -54,11 +66,11 @@ public class SkillControllerTests {
 
     this.mockMvc.perform(delete("/skills")
         .contentType(MediaType.APPLICATION_JSON)
-        .content(skill1)
+        .content(skill)
         .accept(MediaType.APPLICATION_JSON))
         .andExpect(status().is2xxSuccessful());
 
-    this.mockMvc.perform(get("/skills/"+name)
+    this.mockMvc.perform(get("/skills/n")
         .accept(MediaType.APPLICATION_JSON))
         .andExpect(status().is4xxClientError())
         .andDo(print());
